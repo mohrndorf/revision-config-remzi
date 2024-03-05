@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: UML 2.5 Edit Rules (Remzi)
+Bundle-SymbolicName: com.github.repairvision.uml2v5.editrules.remzi;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.sidiff.revision.editrules.project
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-ActivationPolicy: lazy
+Automatic-Module-Name: com.github.repairvision.uml2v5.editrules.remzi

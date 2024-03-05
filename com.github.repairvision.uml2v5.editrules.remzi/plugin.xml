@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.sidiff.revision.editrules.project.rulebase">
+      <rulebase
+            name="com.github.repairvision.uml2v5.editrules.remzi"
+            document-type="http://www.eclipse.org/uml2/5.0.0/UML"
+            folder="editrules">
+      </rulebase>
+   </extension>
+
+</plugin>
