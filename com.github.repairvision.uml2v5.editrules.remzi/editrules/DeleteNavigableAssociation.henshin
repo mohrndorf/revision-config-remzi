@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_rlOqoNtBEe6Lhpxg72ZdpQ" name="Delete: NavigableAssociation" description="Delete: NavigableAssociation">
+  <units xsi:type="henshin:SequentialUnit" xmi:id="_rlOqodtBEe6Lhpxg72ZdpQ" name="Delete: NavigableAssociation" subUnits="_rlOqtNtBEe6Lhpxg72ZdpQ">
+    <parameters xmi:id="_rlOqottBEe6Lhpxg72ZdpQ" name="fromA" kind="IN"/>
+    <parameters xmi:id="_rlOqo9tBEe6Lhpxg72ZdpQ" name="oldB" kind="IN"/>
+    <parameters xmi:id="_rlOqpNtBEe6Lhpxg72ZdpQ" name="attributeNameB" kind="IN"/>
+    <parameters xmi:id="_rlOqpdtBEe6Lhpxg72ZdpQ" name="fromB" kind="IN"/>
+    <parameters xmi:id="_rlOqpttBEe6Lhpxg72ZdpQ" name="oldA" kind="IN"/>
+    <parameters xmi:id="_rlOqp9tBEe6Lhpxg72ZdpQ" name="attributeNameA" kind="IN"/>
+    <parameters xmi:id="_rlOqqNtBEe6Lhpxg72ZdpQ" name="fromAssociation" kind="IN"/>
+    <parameters xmi:id="_rlOqqdtBEe6Lhpxg72ZdpQ" name="associationName" kind="IN"/>
+    <parameters xmi:id="_rlOqqttBEe6Lhpxg72ZdpQ" name="association_name" kind="IN"/>
+    <parameterMappings xmi:id="_rlOqq9tBEe6Lhpxg72ZdpQ" source="_rlOqottBEe6Lhpxg72ZdpQ" target="_rlOqtdtBEe6Lhpxg72ZdpQ"/>
+    <parameterMappings xmi:id="_rlOqrNtBEe6Lhpxg72ZdpQ" source="_rlOqo9tBEe6Lhpxg72ZdpQ" target="_rlOqtttBEe6Lhpxg72ZdpQ"/>
+    <parameterMappings xmi:id="_rlOqrdtBEe6Lhpxg72ZdpQ" source="_rlOqpNtBEe6Lhpxg72ZdpQ" target="_rlOqt9tBEe6Lhpxg72ZdpQ"/>
+    <parameterMappings xmi:id="_rlOqrttBEe6Lhpxg72ZdpQ" source="_rlOqpdtBEe6Lhpxg72ZdpQ" target="_rlOquNtBEe6Lhpxg72ZdpQ"/>
+    <parameterMappings xmi:id="_rlOqr9tBEe6Lhpxg72ZdpQ" source="_rlOqpttBEe6Lhpxg72ZdpQ" target="_rlOqudtBEe6Lhpxg72ZdpQ"/>
+    <parameterMappings xmi:id="_rlOqsNtBEe6Lhpxg72ZdpQ" source="_rlOqp9tBEe6Lhpxg72ZdpQ" target="_rlOquttBEe6Lhpxg72ZdpQ"/>
+    <parameterMappings xmi:id="_rlOqsdtBEe6Lhpxg72ZdpQ" source="_rlOqqNtBEe6Lhpxg72ZdpQ" target="_rlOqu9tBEe6Lhpxg72ZdpQ"/>
+    <parameterMappings xmi:id="_rlOqsttBEe6Lhpxg72ZdpQ" source="_rlOqqdtBEe6Lhpxg72ZdpQ" target="_rlOqvNtBEe6Lhpxg72ZdpQ"/>
+    <parameterMappings xmi:id="_rlOqs9tBEe6Lhpxg72ZdpQ" source="_rlOqqttBEe6Lhpxg72ZdpQ" target="_rlOqvdtBEe6Lhpxg72ZdpQ"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_rlOqtNtBEe6Lhpxg72ZdpQ" name="Delete: NavigableAssociation">
+    <parameters xmi:id="_rlOqtdtBEe6Lhpxg72ZdpQ" name="fromA" kind="IN"/>
+    <parameters xmi:id="_rlOqtttBEe6Lhpxg72ZdpQ" name="oldB" kind="IN"/>
+    <parameters xmi:id="_rlOqt9tBEe6Lhpxg72ZdpQ" name="attributeNameB" kind="IN"/>
+    <parameters xmi:id="_rlOquNtBEe6Lhpxg72ZdpQ" name="fromB" kind="IN"/>
+    <parameters xmi:id="_rlOqudtBEe6Lhpxg72ZdpQ" name="oldA" kind="IN"/>
+    <parameters xmi:id="_rlOquttBEe6Lhpxg72ZdpQ" name="attributeNameA" kind="IN"/>
+    <parameters xmi:id="_rlOqu9tBEe6Lhpxg72ZdpQ" name="fromAssociation" kind="IN"/>
+    <parameters xmi:id="_rlOqvNtBEe6Lhpxg72ZdpQ" name="associationName" kind="IN"/>
+    <parameters xmi:id="_rlOqvdtBEe6Lhpxg72ZdpQ" name="association_name" kind="IN"/>
+    <lhs xmi:id="_rlOqvttBEe6Lhpxg72ZdpQ" name="Lhs">
+      <nodes xmi:id="_rlOqv9tBEe6Lhpxg72ZdpQ" name="fromA" incoming="_rlOqy9tBEe6Lhpxg72ZdpQ" outgoing="_rlOqx9tBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rlOqwNtBEe6Lhpxg72ZdpQ" name="oldB" incoming="_rlOqx9tBEe6Lhpxg72ZdpQ _rlOqzttBEe6Lhpxg72ZdpQ" outgoing="_rlOqyNtBEe6Lhpxg72ZdpQ _rlOqydtBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        <attributes xmi:id="_rlOqwdtBEe6Lhpxg72ZdpQ" value="attributeNameB">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rlOqwttBEe6Lhpxg72ZdpQ" name="fromB" incoming="_rlOqyNtBEe6Lhpxg72ZdpQ" outgoing="_rlOqyttBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rlOqw9tBEe6Lhpxg72ZdpQ" name="oldA" incoming="_rlOqyttBEe6Lhpxg72ZdpQ _rlOqzdtBEe6Lhpxg72ZdpQ" outgoing="_rlOqy9tBEe6Lhpxg72ZdpQ _rlOqzNtBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        <attributes xmi:id="_rlOqxNtBEe6Lhpxg72ZdpQ" value="attributeNameA">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rlOqxdtBEe6Lhpxg72ZdpQ" name="fromAssociation" incoming="_rlOqydtBEe6Lhpxg72ZdpQ _rlOqzNtBEe6Lhpxg72ZdpQ" outgoing="_rlOqzdtBEe6Lhpxg72ZdpQ _rlOqzttBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+        <attributes xmi:id="_rlOqxttBEe6Lhpxg72ZdpQ" value="associationName">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_rlOqx9tBEe6Lhpxg72ZdpQ" source="_rlOqv9tBEe6Lhpxg72ZdpQ" target="_rlOqwNtBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+      </edges>
+      <edges xmi:id="_rlOqyNtBEe6Lhpxg72ZdpQ" source="_rlOqwNtBEe6Lhpxg72ZdpQ" target="_rlOqwttBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+      </edges>
+      <edges xmi:id="_rlOqydtBEe6Lhpxg72ZdpQ" source="_rlOqwNtBEe6Lhpxg72ZdpQ" target="_rlOqxdtBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+      </edges>
+      <edges xmi:id="_rlOqyttBEe6Lhpxg72ZdpQ" source="_rlOqwttBEe6Lhpxg72ZdpQ" target="_rlOqw9tBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+      </edges>
+      <edges xmi:id="_rlOqy9tBEe6Lhpxg72ZdpQ" source="_rlOqw9tBEe6Lhpxg72ZdpQ" target="_rlOqv9tBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+      </edges>
+      <edges xmi:id="_rlOqzNtBEe6Lhpxg72ZdpQ" source="_rlOqw9tBEe6Lhpxg72ZdpQ" target="_rlOqxdtBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+      </edges>
+      <edges xmi:id="_rlOqzdtBEe6Lhpxg72ZdpQ" source="_rlOqxdtBEe6Lhpxg72ZdpQ" target="_rlOqw9tBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+      </edges>
+      <edges xmi:id="_rlOqzttBEe6Lhpxg72ZdpQ" source="_rlOqxdtBEe6Lhpxg72ZdpQ" target="_rlOqwNtBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+      </edges>
+      <formula xsi:type="henshin:NestedCondition" xmi:id="_rlOqz9tBEe6Lhpxg72ZdpQ">
+        <conclusion xmi:id="_rlOq0NtBEe6Lhpxg72ZdpQ" name="pre">
+          <nodes xmi:id="_rlOq0dtBEe6Lhpxg72ZdpQ" name="oldB" outgoing="_rlOq1dtBEe6Lhpxg72ZdpQ">
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </nodes>
+          <nodes xmi:id="_rlOq0ttBEe6Lhpxg72ZdpQ" name="fromA" incoming="_rlOq1dtBEe6Lhpxg72ZdpQ">
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+          </nodes>
+          <nodes xmi:id="_rlOq09tBEe6Lhpxg72ZdpQ" name="oldA" outgoing="_rlOq1ttBEe6Lhpxg72ZdpQ">
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </nodes>
+          <nodes xmi:id="_rlOq1NtBEe6Lhpxg72ZdpQ" name="fromB" incoming="_rlOq1ttBEe6Lhpxg72ZdpQ">
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+          </nodes>
+          <edges xmi:id="_rlOq1dtBEe6Lhpxg72ZdpQ" source="_rlOq0dtBEe6Lhpxg72ZdpQ" target="_rlOq0ttBEe6Lhpxg72ZdpQ">
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </edges>
+          <edges xmi:id="_rlOq1ttBEe6Lhpxg72ZdpQ" source="_rlOq09tBEe6Lhpxg72ZdpQ" target="_rlOq1NtBEe6Lhpxg72ZdpQ">
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </edges>
+        </conclusion>
+        <mappings xmi:id="_rlOq19tBEe6Lhpxg72ZdpQ" origin="_rlOqwNtBEe6Lhpxg72ZdpQ" image="_rlOq0dtBEe6Lhpxg72ZdpQ"/>
+        <mappings xmi:id="_rlOq2NtBEe6Lhpxg72ZdpQ" origin="_rlOqv9tBEe6Lhpxg72ZdpQ" image="_rlOq0ttBEe6Lhpxg72ZdpQ"/>
+        <mappings xmi:id="_rlOq2dtBEe6Lhpxg72ZdpQ" origin="_rlOqw9tBEe6Lhpxg72ZdpQ" image="_rlOq09tBEe6Lhpxg72ZdpQ"/>
+        <mappings xmi:id="_rlOq2ttBEe6Lhpxg72ZdpQ" origin="_rlOqwttBEe6Lhpxg72ZdpQ" image="_rlOq1NtBEe6Lhpxg72ZdpQ"/>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_rlOq29tBEe6Lhpxg72ZdpQ" name="Rhs">
+      <nodes xmi:id="_rlOq3NtBEe6Lhpxg72ZdpQ" name="fromA">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rlOq3dtBEe6Lhpxg72ZdpQ" name="fromB">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rlOq3ttBEe6Lhpxg72ZdpQ" name="fromAssociation">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+        <attributes xmi:id="_rlOq39tBEe6Lhpxg72ZdpQ" value="association_name">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_rlOq4NtBEe6Lhpxg72ZdpQ" origin="_rlOqv9tBEe6Lhpxg72ZdpQ" image="_rlOq3NtBEe6Lhpxg72ZdpQ"/>
+    <mappings xmi:id="_rlOq4dtBEe6Lhpxg72ZdpQ" origin="_rlOqwttBEe6Lhpxg72ZdpQ" image="_rlOq3dtBEe6Lhpxg72ZdpQ"/>
+    <mappings xmi:id="_rlOq4ttBEe6Lhpxg72ZdpQ" origin="_rlOqxdtBEe6Lhpxg72ZdpQ" image="_rlOq3ttBEe6Lhpxg72ZdpQ"/>
+  </units>
+</henshin:Module>

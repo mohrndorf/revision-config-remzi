@@ -1,0 +1,16 @@
+# Transformation Definition: (copy example line, replace patterns <...> with regular expression, remove #)
+# DEFINE : Parameter : <parameter name>
+# DEFINE : Attribute : <node name> : <node type> : <attribute name> : <attribte value>
+DEFINE : Attribute : association : Association : name : associationName
+DEFINE : Attribute : a : Property : name : attributeNameA
+DEFINE : Attribute : b : Property : name : attributeNameB
+
+# DEFINE : Node : <node name> : <node type> : <node name replacement>
+
+# FILTER : Node : <node name> : <node type>
+FILTER : Node : Example : Model
+
+# FILTER : Attribute : <node name> : <node type> : <attribute type>
+FILTER : Attribute : .* : .* : .*
+
+# FILTER : Edge : <source node name> : <source node type> : <edge type> : <target node name> : <target node type>

@@ -2,12 +2,246 @@
 <graphpattern:Bundle xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:graphpattern="http://www.sidiff.org/graphpattern/1.0" xmi:id="_X5HNsNszEe6Kjc5SMn0ZtA" name="UML 2.5 Edit Rules (Remzi)" description="">
   <patterns xmi:id="_X5HNsdszEe6Kjc5SMn0ZtA" name="CyclicInheritance" description="Two classes cannot inherit from each other.">
     <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.constraints#constraint"/>
+    <graphs xmi:id="_rjflQNtBEe6Lhpxg72ZdpQ" name="Inheritance">
+      <nodes xmi:id="_rjflQdtBEe6Lhpxg72ZdpQ" name="A" incomings="_rjflRdtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjflQttBEe6Lhpxg72ZdpQ" target="_rjflQ9tBEe6Lhpxg72ZdpQ" opposite="_rjflRdtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/generalization"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rjflQ9tBEe6Lhpxg72ZdpQ" name="generalization" incomings="_rjflQttBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjflRNtBEe6Lhpxg72ZdpQ" target="_rjflRttBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/general"/>
+        </outgoings>
+        <outgoings xmi:id="_rjflRdtBEe6Lhpxg72ZdpQ" target="_rjflQdtBEe6Lhpxg72ZdpQ" opposite="_rjflQttBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/specific"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization"/>
+      </nodes>
+      <nodes xmi:id="_rjflRttBEe6Lhpxg72ZdpQ" name="B" incomings="_rjflRNtBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+    </graphs>
   </patterns>
   <patterns xmi:id="_X5HNstszEe6Kjc5SMn0ZtA" name="MissingAssociation" description="An attribute with a class type must be represented by an association.">
     <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.constraints#constraint"/>
+    <graphs xmi:id="_rjjPoNtBEe6Lhpxg72ZdpQ" name="NavigableAssociation">
+      <nodes xmi:id="_rjjPodtBEe6Lhpxg72ZdpQ" name="A" incomings="_rjjPpdtBEe6Lhpxg72ZdpQ _rjjPq9tBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjjPottBEe6Lhpxg72ZdpQ" target="_rjjPo9tBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rjjPo9tBEe6Lhpxg72ZdpQ" name="b" incomings="_rjjPottBEe6Lhpxg72ZdpQ _rjjPsdtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjjPpNtBEe6Lhpxg72ZdpQ" target="_rjjPqNtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+        </outgoings>
+        <outgoings xmi:id="_rjjPpdtBEe6Lhpxg72ZdpQ" target="_rjjPodtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+        </outgoings>
+        <outgoings xmi:id="_rjjPpttBEe6Lhpxg72ZdpQ" target="_rjjPr9tBEe6Lhpxg72ZdpQ" opposite="_rjjPsdtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        <attributes xmi:id="_rjjPp9tBEe6Lhpxg72ZdpQ" value="attributeNameB">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rjjPqNtBEe6Lhpxg72ZdpQ" name="B" incomings="_rjjPpNtBEe6Lhpxg72ZdpQ _rjjPrNtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjjPqdtBEe6Lhpxg72ZdpQ" target="_rjjPqttBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rjjPqttBEe6Lhpxg72ZdpQ" name="a" incomings="_rjjPqdtBEe6Lhpxg72ZdpQ _rjjPsNtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjjPq9tBEe6Lhpxg72ZdpQ" target="_rjjPodtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+        </outgoings>
+        <outgoings xmi:id="_rjjPrNtBEe6Lhpxg72ZdpQ" target="_rjjPqNtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+        </outgoings>
+        <outgoings xmi:id="_rjjPrdtBEe6Lhpxg72ZdpQ" target="_rjjPr9tBEe6Lhpxg72ZdpQ" opposite="_rjjPsNtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        <attributes xmi:id="_rjjPrttBEe6Lhpxg72ZdpQ" value="attributeNameA">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rjjPr9tBEe6Lhpxg72ZdpQ" name="association" incomings="_rjjPpttBEe6Lhpxg72ZdpQ _rjjPrdtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjjPsNtBEe6Lhpxg72ZdpQ" target="_rjjPqttBEe6Lhpxg72ZdpQ" opposite="_rjjPrdtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+        </outgoings>
+        <outgoings xmi:id="_rjjPsdtBEe6Lhpxg72ZdpQ" target="_rjjPo9tBEe6Lhpxg72ZdpQ" opposite="_rjjPpttBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+        <attributes xmi:id="_rjjPsttBEe6Lhpxg72ZdpQ" value="associationName">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+    </graphs>
+    <graphs xmi:id="_rjhacNtBEe6Lhpxg72ZdpQ" name="DirectionalNavigableAssociation">
+      <nodes xmi:id="_rjhacdtBEe6Lhpxg72ZdpQ" name="A" incomings="_rjhaddtBEe6Lhpxg72ZdpQ _rjhaf9tBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjhacttBEe6Lhpxg72ZdpQ" target="_rjhac9tBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rjhac9tBEe6Lhpxg72ZdpQ" name="b" incomings="_rjhacttBEe6Lhpxg72ZdpQ _rjhae9tBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjhadNtBEe6Lhpxg72ZdpQ" target="_rjhaeNtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+        </outgoings>
+        <outgoings xmi:id="_rjhaddtBEe6Lhpxg72ZdpQ" target="_rjhacdtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+        </outgoings>
+        <outgoings xmi:id="_rjhadttBEe6Lhpxg72ZdpQ" target="_rjhaedtBEe6Lhpxg72ZdpQ" opposite="_rjhae9tBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        <attributes xmi:id="_rjhad9tBEe6Lhpxg72ZdpQ" value="attributeNameB">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rjhaeNtBEe6Lhpxg72ZdpQ" name="B" incomings="_rjhadNtBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rjhaedtBEe6Lhpxg72ZdpQ" name="association" incomings="_rjhadttBEe6Lhpxg72ZdpQ _rjhagNtBEe6Lhpxg72ZdpQ _rjhagdtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjhaettBEe6Lhpxg72ZdpQ" target="_rjhafttBEe6Lhpxg72ZdpQ" opposite="_rjhagdtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+        </outgoings>
+        <outgoings xmi:id="_rjhae9tBEe6Lhpxg72ZdpQ" target="_rjhac9tBEe6Lhpxg72ZdpQ" opposite="_rjhadttBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+        </outgoings>
+        <outgoings xmi:id="_rjhafNtBEe6Lhpxg72ZdpQ" target="_rjhafttBEe6Lhpxg72ZdpQ" opposite="_rjhagNtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+        <attributes xmi:id="_rjhafdtBEe6Lhpxg72ZdpQ" value="associationName">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rjhafttBEe6Lhpxg72ZdpQ" name="a" incomings="_rjhaettBEe6Lhpxg72ZdpQ _rjhafNtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjhaf9tBEe6Lhpxg72ZdpQ" target="_rjhacdtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+        </outgoings>
+        <outgoings xmi:id="_rjhagNtBEe6Lhpxg72ZdpQ" target="_rjhaedtBEe6Lhpxg72ZdpQ" opposite="_rjhafNtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+        </outgoings>
+        <outgoings xmi:id="_rjhagdtBEe6Lhpxg72ZdpQ" target="_rjhaedtBEe6Lhpxg72ZdpQ" opposite="_rjhaettBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        <attributes xmi:id="_rjhagttBEe6Lhpxg72ZdpQ" value="attributeNameA">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+    </graphs>
+    <graphs xmi:id="_rjrLcNtBEe6Lhpxg72ZdpQ" name="NonNavigableAssociation">
+      <nodes xmi:id="_rjrLcdtBEe6Lhpxg72ZdpQ" name="A" incomings="_rjrLettBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rjrLcttBEe6Lhpxg72ZdpQ" name="B" incomings="_rjrLf9tBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rjrLc9tBEe6Lhpxg72ZdpQ" name="association" incomings="_rjrLe9tBEe6Lhpxg72ZdpQ _rjrLfNtBEe6Lhpxg72ZdpQ _rjrLgNtBEe6Lhpxg72ZdpQ _rjrLgdtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjrLdNtBEe6Lhpxg72ZdpQ" target="_rjrLedtBEe6Lhpxg72ZdpQ" opposite="_rjrLfNtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+        </outgoings>
+        <outgoings xmi:id="_rjrLddtBEe6Lhpxg72ZdpQ" target="_rjrLfttBEe6Lhpxg72ZdpQ" opposite="_rjrLgdtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+        </outgoings>
+        <outgoings xmi:id="_rjrLdttBEe6Lhpxg72ZdpQ" target="_rjrLedtBEe6Lhpxg72ZdpQ" opposite="_rjrLe9tBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+        </outgoings>
+        <outgoings xmi:id="_rjrLd9tBEe6Lhpxg72ZdpQ" target="_rjrLfttBEe6Lhpxg72ZdpQ" opposite="_rjrLgNtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+        <attributes xmi:id="_rjrLeNtBEe6Lhpxg72ZdpQ" value="associationName">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rjrLedtBEe6Lhpxg72ZdpQ" name="a" incomings="_rjrLdNtBEe6Lhpxg72ZdpQ _rjrLdttBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjrLettBEe6Lhpxg72ZdpQ" target="_rjrLcdtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+        </outgoings>
+        <outgoings xmi:id="_rjrLe9tBEe6Lhpxg72ZdpQ" target="_rjrLc9tBEe6Lhpxg72ZdpQ" opposite="_rjrLdttBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+        </outgoings>
+        <outgoings xmi:id="_rjrLfNtBEe6Lhpxg72ZdpQ" target="_rjrLc9tBEe6Lhpxg72ZdpQ" opposite="_rjrLdNtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        <attributes xmi:id="_rjrLfdtBEe6Lhpxg72ZdpQ" value="attributeNameA">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rjrLfttBEe6Lhpxg72ZdpQ" name="b" incomings="_rjrLddtBEe6Lhpxg72ZdpQ _rjrLd9tBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjrLf9tBEe6Lhpxg72ZdpQ" target="_rjrLcttBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+        </outgoings>
+        <outgoings xmi:id="_rjrLgNtBEe6Lhpxg72ZdpQ" target="_rjrLc9tBEe6Lhpxg72ZdpQ" opposite="_rjrLd9tBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+        </outgoings>
+        <outgoings xmi:id="_rjrLgdtBEe6Lhpxg72ZdpQ" target="_rjrLc9tBEe6Lhpxg72ZdpQ" opposite="_rjrLddtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        <attributes xmi:id="_rjrLgttBEe6Lhpxg72ZdpQ" value="attributeNameB">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+    </graphs>
   </patterns>
   <patterns xmi:id="_X5HNs9szEe6Kjc5SMn0ZtA" name="UniqueAttributeName" description="The name of an attribute in a class must be unique.">
     <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.constraints#constraint"/>
+    <graphs xmi:id="_rjtAoNtBEe6Lhpxg72ZdpQ" name="DataTypeAttributeInClass">
+      <nodes xmi:id="_rjtAodtBEe6Lhpxg72ZdpQ" name="A" incomings="_rjtApdtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjtAottBEe6Lhpxg72ZdpQ" target="_rjtAo9tBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rjtAo9tBEe6Lhpxg72ZdpQ" name="attribute" incomings="_rjtAottBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjtApNtBEe6Lhpxg72ZdpQ" target="_rjtAp9tBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+        </outgoings>
+        <outgoings xmi:id="_rjtApdtBEe6Lhpxg72ZdpQ" target="_rjtAodtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        <attributes xmi:id="_rjtApttBEe6Lhpxg72ZdpQ" value="attributeName">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rjtAp9tBEe6Lhpxg72ZdpQ" name="D" incomings="_rjtApNtBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//DataType"/>
+      </nodes>
+    </graphs>
+    <graphs xmi:id="_rjuOwNtBEe6Lhpxg72ZdpQ" name="EnumerationAttributeInClass">
+      <nodes xmi:id="_rjuOwdtBEe6Lhpxg72ZdpQ" name="A" incomings="_rjuOxdtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjuOwttBEe6Lhpxg72ZdpQ" target="_rjuOw9tBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rjuOw9tBEe6Lhpxg72ZdpQ" name="attribute" incomings="_rjuOwttBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjuOxNtBEe6Lhpxg72ZdpQ" target="_rjuOx9tBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+        </outgoings>
+        <outgoings xmi:id="_rjuOxdtBEe6Lhpxg72ZdpQ" target="_rjuOwdtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        <attributes xmi:id="_rjuOxttBEe6Lhpxg72ZdpQ" value="attributeName">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rjuOx9tBEe6Lhpxg72ZdpQ" name="E" incomings="_rjuOxNtBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Enumeration"/>
+      </nodes>
+    </graphs>
   </patterns>
   <patterns xmi:id="_YaWSgNszEe6Kjc5SMn0ZtA" name="RELOCATION_EDGES">
     <graphs xmi:id="_YaZV0NszEe6Kjc5SMn0ZtA" name="[ : Activity] - ownedGroup -> [ : ActivityGroup]">

@@ -2,12 +2,1703 @@
 <graphpattern:Bundle xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:graphpattern="http://www.sidiff.org/graphpattern/1.0" xmi:id="_X5HNsNszEe6Kjc5SMn0ZtA" name="UML 2.5 Edit Rules (Remzi)" description="">
   <patterns xmi:id="_X5HNsdszEe6Kjc5SMn0ZtA" name="CyclicInheritance" description="Two classes cannot inherit from each other.">
     <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.constraints#constraint"/>
+    <graphs xmi:id="_rjflQNtBEe6Lhpxg72ZdpQ" name="Inheritance">
+      <nodes xmi:id="_rjflQdtBEe6Lhpxg72ZdpQ" name="A" incomings="_rjflRdtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjflQttBEe6Lhpxg72ZdpQ" target="_rjflQ9tBEe6Lhpxg72ZdpQ" opposite="_rjflRdtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/generalization"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rjflQ9tBEe6Lhpxg72ZdpQ" name="generalization" incomings="_rjflQttBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjflRNtBEe6Lhpxg72ZdpQ" target="_rjflRttBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/general"/>
+        </outgoings>
+        <outgoings xmi:id="_rjflRdtBEe6Lhpxg72ZdpQ" target="_rjflQdtBEe6Lhpxg72ZdpQ" opposite="_rjflQttBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/specific"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization"/>
+      </nodes>
+      <nodes xmi:id="_rjflRttBEe6Lhpxg72ZdpQ" name="B" incomings="_rjflRNtBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+    </graphs>
+    <patterns xmi:id="_rkxYsdtBEe6Lhpxg72ZdpQ" name="Create: Inheritance">
+      <graphs xmi:id="_rkxYsttBEe6Lhpxg72ZdpQ" name="Create: Inheritance">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxYs9tBEe6Lhpxg72ZdpQ" name="toA" incomings="_rkxYt9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxYtNtBEe6Lhpxg72ZdpQ" target="_rkxYtdtBEe6Lhpxg72ZdpQ" opposite="_rkxYt9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/generalization"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxYtdtBEe6Lhpxg72ZdpQ" name="newGeneralization" incomings="_rkxYtNtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+          <outgoings xmi:id="_rkxYtttBEe6Lhpxg72ZdpQ" target="_rkxYuNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/general"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYt9tBEe6Lhpxg72ZdpQ" target="_rkxYs9tBEe6Lhpxg72ZdpQ" opposite="_rkxYtNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/specific"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization"/>
+        </nodes>
+        <nodes xmi:id="_rkxYuNtBEe6Lhpxg72ZdpQ" name="toB" incomings="_rkxYtttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxYudtBEe6Lhpxg72ZdpQ" name="toA"/>
+      <parameters xmi:id="_rkxYuttBEe6Lhpxg72ZdpQ" name="toB"/>
+    </patterns>
+    <patterns xmi:id="_rkxYu9tBEe6Lhpxg72ZdpQ" name="Delete: Inheritance">
+      <graphs xmi:id="_rkxYvNtBEe6Lhpxg72ZdpQ" name="Delete: Inheritance">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxYvdtBEe6Lhpxg72ZdpQ" name="fromA" incomings="_rkxYwdtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxYvttBEe6Lhpxg72ZdpQ" target="_rkxYv9tBEe6Lhpxg72ZdpQ" opposite="_rkxYwdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/generalization"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxYv9tBEe6Lhpxg72ZdpQ" name="oldGeneralization" incomings="_rkxYvttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+          <outgoings xmi:id="_rkxYwNtBEe6Lhpxg72ZdpQ" target="_rkxYwttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/general"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYwdtBEe6Lhpxg72ZdpQ" target="_rkxYvdtBEe6Lhpxg72ZdpQ" opposite="_rkxYvttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/specific"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization"/>
+        </nodes>
+        <nodes xmi:id="_rkxYwttBEe6Lhpxg72ZdpQ" name="fromB" incomings="_rkxYwNtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxYw9tBEe6Lhpxg72ZdpQ" name="fromA"/>
+      <parameters xmi:id="_rkxYxNtBEe6Lhpxg72ZdpQ" name="oldGeneralization"/>
+      <parameters xmi:id="_rkxYxdtBEe6Lhpxg72ZdpQ" name="fromB"/>
+    </patterns>
+    <patterns xmi:id="_rkxYxttBEe6Lhpxg72ZdpQ" name="Relocation: Inheritance">
+      <graphs xmi:id="_rkxYx9tBEe6Lhpxg72ZdpQ" name="Relocation: Inheritance">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxYyNtBEe6Lhpxg72ZdpQ" name="fromA" incomings="_rkxYzNtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxYydtBEe6Lhpxg72ZdpQ" target="_rkxYyttBEe6Lhpxg72ZdpQ" opposite="_rkxYzNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/generalization"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxYyttBEe6Lhpxg72ZdpQ" name="generalization" incomings="_rkxYydtBEe6Lhpxg72ZdpQ _rkxY0dtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxYy9tBEe6Lhpxg72ZdpQ" target="_rkxYz9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/general"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYzNtBEe6Lhpxg72ZdpQ" target="_rkxYyNtBEe6Lhpxg72ZdpQ" opposite="_rkxYydtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/specific"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYzdtBEe6Lhpxg72ZdpQ" target="_rkxY0ttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/general"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYzttBEe6Lhpxg72ZdpQ" target="_rkxY0NtBEe6Lhpxg72ZdpQ" opposite="_rkxY0dtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/specific"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization"/>
+        </nodes>
+        <nodes xmi:id="_rkxYz9tBEe6Lhpxg72ZdpQ" name="fromB" incomings="_rkxYy9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxY0NtBEe6Lhpxg72ZdpQ" name="toA" incomings="_rkxYzttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxY0dtBEe6Lhpxg72ZdpQ" target="_rkxYyttBEe6Lhpxg72ZdpQ" opposite="_rkxYzttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/generalization"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxY0ttBEe6Lhpxg72ZdpQ" name="toB" incomings="_rkxYzdtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxY09tBEe6Lhpxg72ZdpQ" name="fromA"/>
+      <parameters xmi:id="_rkxY1NtBEe6Lhpxg72ZdpQ" name="generalization"/>
+      <parameters xmi:id="_rkxY1dtBEe6Lhpxg72ZdpQ" name="fromB"/>
+      <parameters xmi:id="_rkxY1ttBEe6Lhpxg72ZdpQ" name="toA"/>
+      <parameters xmi:id="_rkxY19tBEe6Lhpxg72ZdpQ" name="toB"/>
+    </patterns>
   </patterns>
   <patterns xmi:id="_X5HNstszEe6Kjc5SMn0ZtA" name="MissingAssociation" description="An attribute with a class type must be represented by an association.">
     <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.constraints#constraint"/>
+    <graphs xmi:id="_rjjPoNtBEe6Lhpxg72ZdpQ" name="NavigableAssociation">
+      <nodes xmi:id="_rjjPodtBEe6Lhpxg72ZdpQ" name="A" incomings="_rjjPpdtBEe6Lhpxg72ZdpQ _rjjPq9tBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjjPottBEe6Lhpxg72ZdpQ" target="_rjjPo9tBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rjjPo9tBEe6Lhpxg72ZdpQ" name="b" incomings="_rjjPottBEe6Lhpxg72ZdpQ _rjjPsdtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjjPpNtBEe6Lhpxg72ZdpQ" target="_rjjPqNtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+        </outgoings>
+        <outgoings xmi:id="_rjjPpdtBEe6Lhpxg72ZdpQ" target="_rjjPodtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+        </outgoings>
+        <outgoings xmi:id="_rjjPpttBEe6Lhpxg72ZdpQ" target="_rjjPr9tBEe6Lhpxg72ZdpQ" opposite="_rjjPsdtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        <attributes xmi:id="_rjjPp9tBEe6Lhpxg72ZdpQ" value="attributeNameB">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rjjPqNtBEe6Lhpxg72ZdpQ" name="B" incomings="_rjjPpNtBEe6Lhpxg72ZdpQ _rjjPrNtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjjPqdtBEe6Lhpxg72ZdpQ" target="_rjjPqttBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rjjPqttBEe6Lhpxg72ZdpQ" name="a" incomings="_rjjPqdtBEe6Lhpxg72ZdpQ _rjjPsNtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjjPq9tBEe6Lhpxg72ZdpQ" target="_rjjPodtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+        </outgoings>
+        <outgoings xmi:id="_rjjPrNtBEe6Lhpxg72ZdpQ" target="_rjjPqNtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+        </outgoings>
+        <outgoings xmi:id="_rjjPrdtBEe6Lhpxg72ZdpQ" target="_rjjPr9tBEe6Lhpxg72ZdpQ" opposite="_rjjPsNtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        <attributes xmi:id="_rjjPrttBEe6Lhpxg72ZdpQ" value="attributeNameA">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rjjPr9tBEe6Lhpxg72ZdpQ" name="association" incomings="_rjjPpttBEe6Lhpxg72ZdpQ _rjjPrdtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjjPsNtBEe6Lhpxg72ZdpQ" target="_rjjPqttBEe6Lhpxg72ZdpQ" opposite="_rjjPrdtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+        </outgoings>
+        <outgoings xmi:id="_rjjPsdtBEe6Lhpxg72ZdpQ" target="_rjjPo9tBEe6Lhpxg72ZdpQ" opposite="_rjjPpttBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+        <attributes xmi:id="_rjjPsttBEe6Lhpxg72ZdpQ" value="associationName">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+    </graphs>
+    <graphs xmi:id="_rjhacNtBEe6Lhpxg72ZdpQ" name="DirectionalNavigableAssociation">
+      <nodes xmi:id="_rjhacdtBEe6Lhpxg72ZdpQ" name="A" incomings="_rjhaddtBEe6Lhpxg72ZdpQ _rjhaf9tBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjhacttBEe6Lhpxg72ZdpQ" target="_rjhac9tBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rjhac9tBEe6Lhpxg72ZdpQ" name="b" incomings="_rjhacttBEe6Lhpxg72ZdpQ _rjhae9tBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjhadNtBEe6Lhpxg72ZdpQ" target="_rjhaeNtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+        </outgoings>
+        <outgoings xmi:id="_rjhaddtBEe6Lhpxg72ZdpQ" target="_rjhacdtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+        </outgoings>
+        <outgoings xmi:id="_rjhadttBEe6Lhpxg72ZdpQ" target="_rjhaedtBEe6Lhpxg72ZdpQ" opposite="_rjhae9tBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        <attributes xmi:id="_rjhad9tBEe6Lhpxg72ZdpQ" value="attributeNameB">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rjhaeNtBEe6Lhpxg72ZdpQ" name="B" incomings="_rjhadNtBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rjhaedtBEe6Lhpxg72ZdpQ" name="association" incomings="_rjhadttBEe6Lhpxg72ZdpQ _rjhagNtBEe6Lhpxg72ZdpQ _rjhagdtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjhaettBEe6Lhpxg72ZdpQ" target="_rjhafttBEe6Lhpxg72ZdpQ" opposite="_rjhagdtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+        </outgoings>
+        <outgoings xmi:id="_rjhae9tBEe6Lhpxg72ZdpQ" target="_rjhac9tBEe6Lhpxg72ZdpQ" opposite="_rjhadttBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+        </outgoings>
+        <outgoings xmi:id="_rjhafNtBEe6Lhpxg72ZdpQ" target="_rjhafttBEe6Lhpxg72ZdpQ" opposite="_rjhagNtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+        <attributes xmi:id="_rjhafdtBEe6Lhpxg72ZdpQ" value="associationName">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rjhafttBEe6Lhpxg72ZdpQ" name="a" incomings="_rjhaettBEe6Lhpxg72ZdpQ _rjhafNtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjhaf9tBEe6Lhpxg72ZdpQ" target="_rjhacdtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+        </outgoings>
+        <outgoings xmi:id="_rjhagNtBEe6Lhpxg72ZdpQ" target="_rjhaedtBEe6Lhpxg72ZdpQ" opposite="_rjhafNtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+        </outgoings>
+        <outgoings xmi:id="_rjhagdtBEe6Lhpxg72ZdpQ" target="_rjhaedtBEe6Lhpxg72ZdpQ" opposite="_rjhaettBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        <attributes xmi:id="_rjhagttBEe6Lhpxg72ZdpQ" value="attributeNameA">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+    </graphs>
+    <graphs xmi:id="_rjrLcNtBEe6Lhpxg72ZdpQ" name="NonNavigableAssociation">
+      <nodes xmi:id="_rjrLcdtBEe6Lhpxg72ZdpQ" name="A" incomings="_rjrLettBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rjrLcttBEe6Lhpxg72ZdpQ" name="B" incomings="_rjrLf9tBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rjrLc9tBEe6Lhpxg72ZdpQ" name="association" incomings="_rjrLe9tBEe6Lhpxg72ZdpQ _rjrLfNtBEe6Lhpxg72ZdpQ _rjrLgNtBEe6Lhpxg72ZdpQ _rjrLgdtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjrLdNtBEe6Lhpxg72ZdpQ" target="_rjrLedtBEe6Lhpxg72ZdpQ" opposite="_rjrLfNtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+        </outgoings>
+        <outgoings xmi:id="_rjrLddtBEe6Lhpxg72ZdpQ" target="_rjrLfttBEe6Lhpxg72ZdpQ" opposite="_rjrLgdtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+        </outgoings>
+        <outgoings xmi:id="_rjrLdttBEe6Lhpxg72ZdpQ" target="_rjrLedtBEe6Lhpxg72ZdpQ" opposite="_rjrLe9tBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+        </outgoings>
+        <outgoings xmi:id="_rjrLd9tBEe6Lhpxg72ZdpQ" target="_rjrLfttBEe6Lhpxg72ZdpQ" opposite="_rjrLgNtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+        <attributes xmi:id="_rjrLeNtBEe6Lhpxg72ZdpQ" value="associationName">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rjrLedtBEe6Lhpxg72ZdpQ" name="a" incomings="_rjrLdNtBEe6Lhpxg72ZdpQ _rjrLdttBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjrLettBEe6Lhpxg72ZdpQ" target="_rjrLcdtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+        </outgoings>
+        <outgoings xmi:id="_rjrLe9tBEe6Lhpxg72ZdpQ" target="_rjrLc9tBEe6Lhpxg72ZdpQ" opposite="_rjrLdttBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+        </outgoings>
+        <outgoings xmi:id="_rjrLfNtBEe6Lhpxg72ZdpQ" target="_rjrLc9tBEe6Lhpxg72ZdpQ" opposite="_rjrLdNtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        <attributes xmi:id="_rjrLfdtBEe6Lhpxg72ZdpQ" value="attributeNameA">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rjrLfttBEe6Lhpxg72ZdpQ" name="b" incomings="_rjrLddtBEe6Lhpxg72ZdpQ _rjrLd9tBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjrLf9tBEe6Lhpxg72ZdpQ" target="_rjrLcttBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+        </outgoings>
+        <outgoings xmi:id="_rjrLgNtBEe6Lhpxg72ZdpQ" target="_rjrLc9tBEe6Lhpxg72ZdpQ" opposite="_rjrLd9tBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+        </outgoings>
+        <outgoings xmi:id="_rjrLgdtBEe6Lhpxg72ZdpQ" target="_rjrLc9tBEe6Lhpxg72ZdpQ" opposite="_rjrLddtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        <attributes xmi:id="_rjrLgttBEe6Lhpxg72ZdpQ" value="attributeNameB">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+    </graphs>
+    <patterns xmi:id="_rkxXoNtBEe6Lhpxg72ZdpQ" name="Create: DirectionalNavigableAssociation">
+      <graphs xmi:id="_rkxXodtBEe6Lhpxg72ZdpQ" name="Create: DirectionalNavigableAssociation">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxXottBEe6Lhpxg72ZdpQ" name="toA" incomings="_rkxXpttBEe6Lhpxg72ZdpQ _rkxXsNtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxXo9tBEe6Lhpxg72ZdpQ" target="_rkxXpNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxXpNtBEe6Lhpxg72ZdpQ" name="newB" incomings="_rkxXo9tBEe6Lhpxg72ZdpQ _rkxXrNtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+          <outgoings xmi:id="_rkxXpdtBEe6Lhpxg72ZdpQ" target="_rkxXqdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxXpttBEe6Lhpxg72ZdpQ" target="_rkxXottBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxXp9tBEe6Lhpxg72ZdpQ" target="_rkxXqttBEe6Lhpxg72ZdpQ" opposite="_rkxXrNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxXqNtBEe6Lhpxg72ZdpQ" value="attributeNameB">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxXqdtBEe6Lhpxg72ZdpQ" name="toB" incomings="_rkxXpdtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxXqttBEe6Lhpxg72ZdpQ" name="toAssociation" incomings="_rkxXp9tBEe6Lhpxg72ZdpQ _rkxXsdtBEe6Lhpxg72ZdpQ _rkxXsttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxXq9tBEe6Lhpxg72ZdpQ" target="_rkxXr9tBEe6Lhpxg72ZdpQ" opposite="_rkxXsttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxXrNtBEe6Lhpxg72ZdpQ" target="_rkxXpNtBEe6Lhpxg72ZdpQ" opposite="_rkxXp9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxXrdtBEe6Lhpxg72ZdpQ" target="_rkxXr9tBEe6Lhpxg72ZdpQ" opposite="_rkxXsdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+          <attributes xmi:id="_rkxXrttBEe6Lhpxg72ZdpQ" value="associationName">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxXr9tBEe6Lhpxg72ZdpQ" name="newA" incomings="_rkxXq9tBEe6Lhpxg72ZdpQ _rkxXrdtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+          <outgoings xmi:id="_rkxXsNtBEe6Lhpxg72ZdpQ" target="_rkxXottBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxXsdtBEe6Lhpxg72ZdpQ" target="_rkxXqttBEe6Lhpxg72ZdpQ" opposite="_rkxXrdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxXsttBEe6Lhpxg72ZdpQ" target="_rkxXqttBEe6Lhpxg72ZdpQ" opposite="_rkxXq9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxXs9tBEe6Lhpxg72ZdpQ" value="attributeNameA">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxXtNtBEe6Lhpxg72ZdpQ" name="toA"/>
+      <parameters xmi:id="_rkxXtdtBEe6Lhpxg72ZdpQ" name="attributeNameB"/>
+      <parameters xmi:id="_rkxXtttBEe6Lhpxg72ZdpQ" name="toB"/>
+      <parameters xmi:id="_rkxXt9tBEe6Lhpxg72ZdpQ" name="toAssociation"/>
+      <parameters xmi:id="_rkxXuNtBEe6Lhpxg72ZdpQ" name="associationName"/>
+      <parameters xmi:id="_rkxXudtBEe6Lhpxg72ZdpQ" name="attributeNameA"/>
+    </patterns>
+    <patterns xmi:id="_rkxXuttBEe6Lhpxg72ZdpQ" name="Delete: DirectionalNavigableAssociation">
+      <graphs xmi:id="_rkxXu9tBEe6Lhpxg72ZdpQ" name="Delete: DirectionalNavigableAssociation">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxXvNtBEe6Lhpxg72ZdpQ" name="fromA" incomings="_rkxXwNtBEe6Lhpxg72ZdpQ _rkxXy9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxXvdtBEe6Lhpxg72ZdpQ" target="_rkxXvttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxXvttBEe6Lhpxg72ZdpQ" name="oldB" incomings="_rkxXvdtBEe6Lhpxg72ZdpQ _rkxXxttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+          <outgoings xmi:id="_rkxXv9tBEe6Lhpxg72ZdpQ" target="_rkxXw9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxXwNtBEe6Lhpxg72ZdpQ" target="_rkxXvNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#require"/>
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#pre"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxXwdtBEe6Lhpxg72ZdpQ" target="_rkxXxNtBEe6Lhpxg72ZdpQ" opposite="_rkxXxttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxXwttBEe6Lhpxg72ZdpQ" value="attributeNameB">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxXw9tBEe6Lhpxg72ZdpQ" name="fromB" incomings="_rkxXv9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxXxNtBEe6Lhpxg72ZdpQ" name="fromAssociation" incomings="_rkxXwdtBEe6Lhpxg72ZdpQ _rkxXzNtBEe6Lhpxg72ZdpQ _rkxXzdtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxXxdtBEe6Lhpxg72ZdpQ" target="_rkxXyttBEe6Lhpxg72ZdpQ" opposite="_rkxXzdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxXxttBEe6Lhpxg72ZdpQ" target="_rkxXvttBEe6Lhpxg72ZdpQ" opposite="_rkxXwdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxXx9tBEe6Lhpxg72ZdpQ" target="_rkxXyttBEe6Lhpxg72ZdpQ" opposite="_rkxXzNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+          <attributes xmi:id="_rkxXyNtBEe6Lhpxg72ZdpQ" value="associationName">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+          <attributes xmi:id="_rkxXydtBEe6Lhpxg72ZdpQ" value="association_name">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxXyttBEe6Lhpxg72ZdpQ" name="oldA" incomings="_rkxXxdtBEe6Lhpxg72ZdpQ _rkxXx9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+          <outgoings xmi:id="_rkxXy9tBEe6Lhpxg72ZdpQ" target="_rkxXvNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxXzNtBEe6Lhpxg72ZdpQ" target="_rkxXxNtBEe6Lhpxg72ZdpQ" opposite="_rkxXx9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxXzdtBEe6Lhpxg72ZdpQ" target="_rkxXxNtBEe6Lhpxg72ZdpQ" opposite="_rkxXxdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxXzttBEe6Lhpxg72ZdpQ" value="attributeNameA">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxXz9tBEe6Lhpxg72ZdpQ" name="fromA"/>
+      <parameters xmi:id="_rkxX0NtBEe6Lhpxg72ZdpQ" name="oldB"/>
+      <parameters xmi:id="_rkxX0dtBEe6Lhpxg72ZdpQ" name="attributeNameB"/>
+      <parameters xmi:id="_rkxX0ttBEe6Lhpxg72ZdpQ" name="fromB"/>
+      <parameters xmi:id="_rkxX09tBEe6Lhpxg72ZdpQ" name="fromAssociation"/>
+      <parameters xmi:id="_rkxX1NtBEe6Lhpxg72ZdpQ" name="associationName"/>
+      <parameters xmi:id="_rkxX1dtBEe6Lhpxg72ZdpQ" name="association_name"/>
+      <parameters xmi:id="_rkxX1ttBEe6Lhpxg72ZdpQ" name="oldA"/>
+      <parameters xmi:id="_rkxX19tBEe6Lhpxg72ZdpQ" name="attributeNameA"/>
+    </patterns>
+    <patterns xmi:id="_rkxX2NtBEe6Lhpxg72ZdpQ" name="Transform: DirectionalNavigableAssociation - To - NonNavigableAssociation">
+      <graphs xmi:id="_rkxX2dtBEe6Lhpxg72ZdpQ" name="Transform: DirectionalNavigableAssociation - To - NonNavigableAssociation">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxX2ttBEe6Lhpxg72ZdpQ" name="A" incomings="_rkxX3ttBEe6Lhpxg72ZdpQ _rkxX6ttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxX29tBEe6Lhpxg72ZdpQ" target="_rkxX3NtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxX3NtBEe6Lhpxg72ZdpQ" name="b" incomings="_rkxX29tBEe6Lhpxg72ZdpQ _rkxX5dtBEe6Lhpxg72ZdpQ _rkxX59tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxX3dtBEe6Lhpxg72ZdpQ" target="_rkxX4ttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxX3ttBEe6Lhpxg72ZdpQ" target="_rkxX2ttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#require"/>
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#pre"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxX39tBEe6Lhpxg72ZdpQ" target="_rkxX49tBEe6Lhpxg72ZdpQ" opposite="_rkxX5dtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxX4NtBEe6Lhpxg72ZdpQ" target="_rkxX49tBEe6Lhpxg72ZdpQ" opposite="_rkxX59tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxX4dtBEe6Lhpxg72ZdpQ" value="attributeNameB">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxX4ttBEe6Lhpxg72ZdpQ" name="B" incomings="_rkxX3dtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxX49tBEe6Lhpxg72ZdpQ" name="association" incomings="_rkxX39tBEe6Lhpxg72ZdpQ _rkxX69tBEe6Lhpxg72ZdpQ _rkxX7NtBEe6Lhpxg72ZdpQ _rkxX4NtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxX5NtBEe6Lhpxg72ZdpQ" target="_rkxX6dtBEe6Lhpxg72ZdpQ" opposite="_rkxX7NtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxX5dtBEe6Lhpxg72ZdpQ" target="_rkxX3NtBEe6Lhpxg72ZdpQ" opposite="_rkxX39tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxX5ttBEe6Lhpxg72ZdpQ" target="_rkxX6dtBEe6Lhpxg72ZdpQ" opposite="_rkxX69tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxX59tBEe6Lhpxg72ZdpQ" target="_rkxX3NtBEe6Lhpxg72ZdpQ" opposite="_rkxX4NtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+          <attributes xmi:id="_rkxX6NtBEe6Lhpxg72ZdpQ" value="associationName">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxX6dtBEe6Lhpxg72ZdpQ" name="a" incomings="_rkxX5NtBEe6Lhpxg72ZdpQ _rkxX5ttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxX6ttBEe6Lhpxg72ZdpQ" target="_rkxX2ttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxX69tBEe6Lhpxg72ZdpQ" target="_rkxX49tBEe6Lhpxg72ZdpQ" opposite="_rkxX5ttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxX7NtBEe6Lhpxg72ZdpQ" target="_rkxX49tBEe6Lhpxg72ZdpQ" opposite="_rkxX5NtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxX7dtBEe6Lhpxg72ZdpQ" value="attributeNameA">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxX7ttBEe6Lhpxg72ZdpQ" name="A"/>
+      <parameters xmi:id="_rkxX79tBEe6Lhpxg72ZdpQ" name="b"/>
+      <parameters xmi:id="_rkxX8NtBEe6Lhpxg72ZdpQ" name="attributeNameB"/>
+      <parameters xmi:id="_rkxX8dtBEe6Lhpxg72ZdpQ" name="association"/>
+      <parameters xmi:id="_rkxX8ttBEe6Lhpxg72ZdpQ" name="associationName"/>
+      <parameters xmi:id="_rkxX89tBEe6Lhpxg72ZdpQ" name="attributeNameA"/>
+    </patterns>
+    <patterns xmi:id="_rkxX9NtBEe6Lhpxg72ZdpQ" name="Relocation: DirectionalNavigableAssociation">
+      <graphs xmi:id="_rkxX9dtBEe6Lhpxg72ZdpQ" name="Relocation: DirectionalNavigableAssociation">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxX9ttBEe6Lhpxg72ZdpQ" name="fromA" incomings="_rkxX-ttBEe6Lhpxg72ZdpQ _rkxYBttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxX99tBEe6Lhpxg72ZdpQ" target="_rkxX-NtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxX-NtBEe6Lhpxg72ZdpQ" name="b" incomings="_rkxX99tBEe6Lhpxg72ZdpQ _rkxYAttBEe6Lhpxg72ZdpQ _rkxYDNtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxX-dtBEe6Lhpxg72ZdpQ" target="_rkxX_9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxX-ttBEe6Lhpxg72ZdpQ" target="_rkxX9ttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#require"/>
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#pre"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxX-9tBEe6Lhpxg72ZdpQ" target="_rkxYANtBEe6Lhpxg72ZdpQ" opposite="_rkxYAttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxX_NtBEe6Lhpxg72ZdpQ" target="_rkxYDdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxX_dtBEe6Lhpxg72ZdpQ" target="_rkxYC9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#require"/>
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#post"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxX_ttBEe6Lhpxg72ZdpQ" value="attributeNameB">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxX_9tBEe6Lhpxg72ZdpQ" name="fromB" incomings="_rkxX-dtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxYANtBEe6Lhpxg72ZdpQ" name="association" incomings="_rkxX-9tBEe6Lhpxg72ZdpQ _rkxYB9tBEe6Lhpxg72ZdpQ _rkxYCNtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxYAdtBEe6Lhpxg72ZdpQ" target="_rkxYBdtBEe6Lhpxg72ZdpQ" opposite="_rkxYCNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYAttBEe6Lhpxg72ZdpQ" target="_rkxX-NtBEe6Lhpxg72ZdpQ" opposite="_rkxX-9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYA9tBEe6Lhpxg72ZdpQ" target="_rkxYBdtBEe6Lhpxg72ZdpQ" opposite="_rkxYB9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+          <attributes xmi:id="_rkxYBNtBEe6Lhpxg72ZdpQ" value="associationName">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxYBdtBEe6Lhpxg72ZdpQ" name="a" incomings="_rkxYAdtBEe6Lhpxg72ZdpQ _rkxYA9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxYBttBEe6Lhpxg72ZdpQ" target="_rkxX9ttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYB9tBEe6Lhpxg72ZdpQ" target="_rkxYANtBEe6Lhpxg72ZdpQ" opposite="_rkxYA9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYCNtBEe6Lhpxg72ZdpQ" target="_rkxYANtBEe6Lhpxg72ZdpQ" opposite="_rkxYAdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYCdtBEe6Lhpxg72ZdpQ" target="_rkxYC9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxYCttBEe6Lhpxg72ZdpQ" value="attributeNameA">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxYC9tBEe6Lhpxg72ZdpQ" name="toA" incomings="_rkxX_dtBEe6Lhpxg72ZdpQ _rkxYCdtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxYDNtBEe6Lhpxg72ZdpQ" target="_rkxX-NtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxYDdtBEe6Lhpxg72ZdpQ" name="toB" incomings="_rkxX_NtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxYDttBEe6Lhpxg72ZdpQ" name="fromA"/>
+      <parameters xmi:id="_rkxYD9tBEe6Lhpxg72ZdpQ" name="b"/>
+      <parameters xmi:id="_rkxYENtBEe6Lhpxg72ZdpQ" name="attributeNameB"/>
+      <parameters xmi:id="_rkxYEdtBEe6Lhpxg72ZdpQ" name="fromB"/>
+      <parameters xmi:id="_rkxYEttBEe6Lhpxg72ZdpQ" name="associationName"/>
+      <parameters xmi:id="_rkxYE9tBEe6Lhpxg72ZdpQ" name="a"/>
+      <parameters xmi:id="_rkxYFNtBEe6Lhpxg72ZdpQ" name="attributeNameA"/>
+      <parameters xmi:id="_rkxYFdtBEe6Lhpxg72ZdpQ" name="toA"/>
+      <parameters xmi:id="_rkxYFttBEe6Lhpxg72ZdpQ" name="toB"/>
+    </patterns>
+    <patterns xmi:id="_rkxYF9tBEe6Lhpxg72ZdpQ" name="Create: NonNavigableAssociation">
+      <graphs xmi:id="_rkxYGNtBEe6Lhpxg72ZdpQ" name="Create: NonNavigableAssociation">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxYGdtBEe6Lhpxg72ZdpQ" name="toA" incomings="_rkxYIttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxYGttBEe6Lhpxg72ZdpQ" name="toB" incomings="_rkxYJ9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxYG9tBEe6Lhpxg72ZdpQ" name="toAssociation" incomings="_rkxYI9tBEe6Lhpxg72ZdpQ _rkxYJNtBEe6Lhpxg72ZdpQ _rkxYKNtBEe6Lhpxg72ZdpQ _rkxYKdtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxYHNtBEe6Lhpxg72ZdpQ" target="_rkxYIdtBEe6Lhpxg72ZdpQ" opposite="_rkxYJNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYHdtBEe6Lhpxg72ZdpQ" target="_rkxYJttBEe6Lhpxg72ZdpQ" opposite="_rkxYKdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYHttBEe6Lhpxg72ZdpQ" target="_rkxYIdtBEe6Lhpxg72ZdpQ" opposite="_rkxYI9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYH9tBEe6Lhpxg72ZdpQ" target="_rkxYJttBEe6Lhpxg72ZdpQ" opposite="_rkxYKNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+          <attributes xmi:id="_rkxYINtBEe6Lhpxg72ZdpQ" value="associationName">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxYIdtBEe6Lhpxg72ZdpQ" name="newA" incomings="_rkxYHNtBEe6Lhpxg72ZdpQ _rkxYHttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+          <outgoings xmi:id="_rkxYIttBEe6Lhpxg72ZdpQ" target="_rkxYGdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYI9tBEe6Lhpxg72ZdpQ" target="_rkxYG9tBEe6Lhpxg72ZdpQ" opposite="_rkxYHttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYJNtBEe6Lhpxg72ZdpQ" target="_rkxYG9tBEe6Lhpxg72ZdpQ" opposite="_rkxYHNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxYJdtBEe6Lhpxg72ZdpQ" value="attributeNameA">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxYJttBEe6Lhpxg72ZdpQ" name="newB" incomings="_rkxYHdtBEe6Lhpxg72ZdpQ _rkxYH9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+          <outgoings xmi:id="_rkxYJ9tBEe6Lhpxg72ZdpQ" target="_rkxYGttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYKNtBEe6Lhpxg72ZdpQ" target="_rkxYG9tBEe6Lhpxg72ZdpQ" opposite="_rkxYH9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYKdtBEe6Lhpxg72ZdpQ" target="_rkxYG9tBEe6Lhpxg72ZdpQ" opposite="_rkxYHdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxYKttBEe6Lhpxg72ZdpQ" value="attributeNameB">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxYK9tBEe6Lhpxg72ZdpQ" name="toA"/>
+      <parameters xmi:id="_rkxYLNtBEe6Lhpxg72ZdpQ" name="toB"/>
+      <parameters xmi:id="_rkxYLdtBEe6Lhpxg72ZdpQ" name="toAssociation"/>
+      <parameters xmi:id="_rkxYLttBEe6Lhpxg72ZdpQ" name="associationName"/>
+      <parameters xmi:id="_rkxYL9tBEe6Lhpxg72ZdpQ" name="attributeNameA"/>
+      <parameters xmi:id="_rkxYMNtBEe6Lhpxg72ZdpQ" name="attributeNameB"/>
+    </patterns>
+    <patterns xmi:id="_rkxYMdtBEe6Lhpxg72ZdpQ" name="Delete: NonNavigableAssociation">
+      <graphs xmi:id="_rkxYMttBEe6Lhpxg72ZdpQ" name="Delete: NonNavigableAssociation">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxYM9tBEe6Lhpxg72ZdpQ" name="fromA" incomings="_rkxYPdtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxYNNtBEe6Lhpxg72ZdpQ" name="fromB" incomings="_rkxYQttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxYNdtBEe6Lhpxg72ZdpQ" name="fromAssociation" incomings="_rkxYPttBEe6Lhpxg72ZdpQ _rkxYP9tBEe6Lhpxg72ZdpQ _rkxYQ9tBEe6Lhpxg72ZdpQ _rkxYRNtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxYNttBEe6Lhpxg72ZdpQ" target="_rkxYPNtBEe6Lhpxg72ZdpQ" opposite="_rkxYP9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYN9tBEe6Lhpxg72ZdpQ" target="_rkxYQdtBEe6Lhpxg72ZdpQ" opposite="_rkxYRNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYONtBEe6Lhpxg72ZdpQ" target="_rkxYPNtBEe6Lhpxg72ZdpQ" opposite="_rkxYPttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYOdtBEe6Lhpxg72ZdpQ" target="_rkxYQdtBEe6Lhpxg72ZdpQ" opposite="_rkxYQ9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+          <attributes xmi:id="_rkxYOttBEe6Lhpxg72ZdpQ" value="associationName">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+          <attributes xmi:id="_rkxYO9tBEe6Lhpxg72ZdpQ" value="association_name">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxYPNtBEe6Lhpxg72ZdpQ" name="oldA" incomings="_rkxYNttBEe6Lhpxg72ZdpQ _rkxYONtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+          <outgoings xmi:id="_rkxYPdtBEe6Lhpxg72ZdpQ" target="_rkxYM9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYPttBEe6Lhpxg72ZdpQ" target="_rkxYNdtBEe6Lhpxg72ZdpQ" opposite="_rkxYONtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYP9tBEe6Lhpxg72ZdpQ" target="_rkxYNdtBEe6Lhpxg72ZdpQ" opposite="_rkxYNttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxYQNtBEe6Lhpxg72ZdpQ" value="attributeNameA">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxYQdtBEe6Lhpxg72ZdpQ" name="oldB" incomings="_rkxYN9tBEe6Lhpxg72ZdpQ _rkxYOdtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+          <outgoings xmi:id="_rkxYQttBEe6Lhpxg72ZdpQ" target="_rkxYNNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYQ9tBEe6Lhpxg72ZdpQ" target="_rkxYNdtBEe6Lhpxg72ZdpQ" opposite="_rkxYOdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYRNtBEe6Lhpxg72ZdpQ" target="_rkxYNdtBEe6Lhpxg72ZdpQ" opposite="_rkxYN9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxYRdtBEe6Lhpxg72ZdpQ" value="attributeNameB">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxYRttBEe6Lhpxg72ZdpQ" name="fromA"/>
+      <parameters xmi:id="_rkxYR9tBEe6Lhpxg72ZdpQ" name="fromB"/>
+      <parameters xmi:id="_rkxYSNtBEe6Lhpxg72ZdpQ" name="fromAssociation"/>
+      <parameters xmi:id="_rkxYSdtBEe6Lhpxg72ZdpQ" name="associationName"/>
+      <parameters xmi:id="_rkxYSttBEe6Lhpxg72ZdpQ" name="association_name"/>
+      <parameters xmi:id="_rkxYS9tBEe6Lhpxg72ZdpQ" name="oldA"/>
+      <parameters xmi:id="_rkxYTNtBEe6Lhpxg72ZdpQ" name="attributeNameA"/>
+      <parameters xmi:id="_rkxYTdtBEe6Lhpxg72ZdpQ" name="oldB"/>
+      <parameters xmi:id="_rkxYTttBEe6Lhpxg72ZdpQ" name="attributeNameB"/>
+    </patterns>
+    <patterns xmi:id="_rkxYT9tBEe6Lhpxg72ZdpQ" name="Relocation: NonNavigableAssociation">
+      <graphs xmi:id="_rkxYUNtBEe6Lhpxg72ZdpQ" name="Relocation: NonNavigableAssociation">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxYUdtBEe6Lhpxg72ZdpQ" name="fromA" incomings="_rkxYWttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxYUttBEe6Lhpxg72ZdpQ" name="fromB" incomings="_rkxYYNtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxYU9tBEe6Lhpxg72ZdpQ" name="association" incomings="_rkxYW9tBEe6Lhpxg72ZdpQ _rkxYXNtBEe6Lhpxg72ZdpQ _rkxYYdtBEe6Lhpxg72ZdpQ _rkxYYttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxYVNtBEe6Lhpxg72ZdpQ" target="_rkxYWdtBEe6Lhpxg72ZdpQ" opposite="_rkxYXNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYVdtBEe6Lhpxg72ZdpQ" target="_rkxYX9tBEe6Lhpxg72ZdpQ" opposite="_rkxYYttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYVttBEe6Lhpxg72ZdpQ" target="_rkxYWdtBEe6Lhpxg72ZdpQ" opposite="_rkxYW9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYV9tBEe6Lhpxg72ZdpQ" target="_rkxYX9tBEe6Lhpxg72ZdpQ" opposite="_rkxYYdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+          <attributes xmi:id="_rkxYWNtBEe6Lhpxg72ZdpQ" value="associationName">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxYWdtBEe6Lhpxg72ZdpQ" name="a" incomings="_rkxYVNtBEe6Lhpxg72ZdpQ _rkxYVttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxYWttBEe6Lhpxg72ZdpQ" target="_rkxYUdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYW9tBEe6Lhpxg72ZdpQ" target="_rkxYU9tBEe6Lhpxg72ZdpQ" opposite="_rkxYVttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYXNtBEe6Lhpxg72ZdpQ" target="_rkxYU9tBEe6Lhpxg72ZdpQ" opposite="_rkxYVNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYXdtBEe6Lhpxg72ZdpQ" target="_rkxYZdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxYXttBEe6Lhpxg72ZdpQ" value="attributeNameA">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxYX9tBEe6Lhpxg72ZdpQ" name="b" incomings="_rkxYVdtBEe6Lhpxg72ZdpQ _rkxYV9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxYYNtBEe6Lhpxg72ZdpQ" target="_rkxYUttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYYdtBEe6Lhpxg72ZdpQ" target="_rkxYU9tBEe6Lhpxg72ZdpQ" opposite="_rkxYV9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYYttBEe6Lhpxg72ZdpQ" target="_rkxYU9tBEe6Lhpxg72ZdpQ" opposite="_rkxYVdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYY9tBEe6Lhpxg72ZdpQ" target="_rkxYZttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxYZNtBEe6Lhpxg72ZdpQ" value="attributeNameB">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxYZdtBEe6Lhpxg72ZdpQ" name="toA" incomings="_rkxYXdtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxYZttBEe6Lhpxg72ZdpQ" name="toB" incomings="_rkxYY9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxYZ9tBEe6Lhpxg72ZdpQ" name="fromA"/>
+      <parameters xmi:id="_rkxYaNtBEe6Lhpxg72ZdpQ" name="fromB"/>
+      <parameters xmi:id="_rkxYadtBEe6Lhpxg72ZdpQ" name="associationName"/>
+      <parameters xmi:id="_rkxYattBEe6Lhpxg72ZdpQ" name="a"/>
+      <parameters xmi:id="_rkxYa9tBEe6Lhpxg72ZdpQ" name="attributeNameA"/>
+      <parameters xmi:id="_rkxYbNtBEe6Lhpxg72ZdpQ" name="b"/>
+      <parameters xmi:id="_rkxYbdtBEe6Lhpxg72ZdpQ" name="attributeNameB"/>
+      <parameters xmi:id="_rkxYbttBEe6Lhpxg72ZdpQ" name="toA"/>
+      <parameters xmi:id="_rkxYb9tBEe6Lhpxg72ZdpQ" name="toB"/>
+    </patterns>
+    <patterns xmi:id="_rkxY2NtBEe6Lhpxg72ZdpQ" name="Create: NavigableAssociation">
+      <graphs xmi:id="_rkxY2dtBEe6Lhpxg72ZdpQ" name="Create: NavigableAssociation">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxY2ttBEe6Lhpxg72ZdpQ" name="toA" incomings="_rkxY3ttBEe6Lhpxg72ZdpQ _rkxY5NtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxY29tBEe6Lhpxg72ZdpQ" target="_rkxY3NtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxY3NtBEe6Lhpxg72ZdpQ" name="newB" incomings="_rkxY29tBEe6Lhpxg72ZdpQ _rkxY6ttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+          <outgoings xmi:id="_rkxY3dtBEe6Lhpxg72ZdpQ" target="_rkxY4dtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxY3ttBEe6Lhpxg72ZdpQ" target="_rkxY2ttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxY39tBEe6Lhpxg72ZdpQ" target="_rkxY6NtBEe6Lhpxg72ZdpQ" opposite="_rkxY6ttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxY4NtBEe6Lhpxg72ZdpQ" value="attributeNameB">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxY4dtBEe6Lhpxg72ZdpQ" name="toB" incomings="_rkxY3dtBEe6Lhpxg72ZdpQ _rkxY5dtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxY4ttBEe6Lhpxg72ZdpQ" target="_rkxY49tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxY49tBEe6Lhpxg72ZdpQ" name="newA" incomings="_rkxY4ttBEe6Lhpxg72ZdpQ _rkxY6dtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+          <outgoings xmi:id="_rkxY5NtBEe6Lhpxg72ZdpQ" target="_rkxY2ttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxY5dtBEe6Lhpxg72ZdpQ" target="_rkxY4dtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxY5ttBEe6Lhpxg72ZdpQ" target="_rkxY6NtBEe6Lhpxg72ZdpQ" opposite="_rkxY6dtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxY59tBEe6Lhpxg72ZdpQ" value="attributeNameA">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxY6NtBEe6Lhpxg72ZdpQ" name="toAssociation" incomings="_rkxY39tBEe6Lhpxg72ZdpQ _rkxY5ttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxY6dtBEe6Lhpxg72ZdpQ" target="_rkxY49tBEe6Lhpxg72ZdpQ" opposite="_rkxY5ttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxY6ttBEe6Lhpxg72ZdpQ" target="_rkxY3NtBEe6Lhpxg72ZdpQ" opposite="_rkxY39tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+          <attributes xmi:id="_rkxY69tBEe6Lhpxg72ZdpQ" value="associationName">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxY7NtBEe6Lhpxg72ZdpQ" name="toA"/>
+      <parameters xmi:id="_rkxY7dtBEe6Lhpxg72ZdpQ" name="attributeNameB"/>
+      <parameters xmi:id="_rkxY7ttBEe6Lhpxg72ZdpQ" name="toB"/>
+      <parameters xmi:id="_rkxY79tBEe6Lhpxg72ZdpQ" name="attributeNameA"/>
+      <parameters xmi:id="_rkxY8NtBEe6Lhpxg72ZdpQ" name="toAssociation"/>
+      <parameters xmi:id="_rkxY8dtBEe6Lhpxg72ZdpQ" name="associationName"/>
+    </patterns>
+    <patterns xmi:id="_rkxY8ttBEe6Lhpxg72ZdpQ" name="Delete: NavigableAssociation">
+      <graphs xmi:id="_rkxY89tBEe6Lhpxg72ZdpQ" name="Delete: NavigableAssociation">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxY9NtBEe6Lhpxg72ZdpQ" name="fromA" incomings="_rkxY-NtBEe6Lhpxg72ZdpQ _rkxY_ttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxY9dtBEe6Lhpxg72ZdpQ" target="_rkxY9ttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxY9ttBEe6Lhpxg72ZdpQ" name="oldB" incomings="_rkxY9dtBEe6Lhpxg72ZdpQ _rkxZBNtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+          <outgoings xmi:id="_rkxY99tBEe6Lhpxg72ZdpQ" target="_rkxY-9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxY-NtBEe6Lhpxg72ZdpQ" target="_rkxY9NtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#require"/>
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#pre"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxY-dtBEe6Lhpxg72ZdpQ" target="_rkxZAttBEe6Lhpxg72ZdpQ" opposite="_rkxZBNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxY-ttBEe6Lhpxg72ZdpQ" value="attributeNameB">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxY-9tBEe6Lhpxg72ZdpQ" name="fromB" incomings="_rkxY99tBEe6Lhpxg72ZdpQ _rkxY_9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxY_NtBEe6Lhpxg72ZdpQ" target="_rkxY_dtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxY_dtBEe6Lhpxg72ZdpQ" name="oldA" incomings="_rkxY_NtBEe6Lhpxg72ZdpQ _rkxZA9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+          <outgoings xmi:id="_rkxY_ttBEe6Lhpxg72ZdpQ" target="_rkxY9NtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxY_9tBEe6Lhpxg72ZdpQ" target="_rkxY-9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#require"/>
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#pre"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZANtBEe6Lhpxg72ZdpQ" target="_rkxZAttBEe6Lhpxg72ZdpQ" opposite="_rkxZA9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxZAdtBEe6Lhpxg72ZdpQ" value="attributeNameA">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxZAttBEe6Lhpxg72ZdpQ" name="fromAssociation" incomings="_rkxY-dtBEe6Lhpxg72ZdpQ _rkxZANtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxZA9tBEe6Lhpxg72ZdpQ" target="_rkxY_dtBEe6Lhpxg72ZdpQ" opposite="_rkxZANtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZBNtBEe6Lhpxg72ZdpQ" target="_rkxY9ttBEe6Lhpxg72ZdpQ" opposite="_rkxY-dtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+          <attributes xmi:id="_rkxZBdtBEe6Lhpxg72ZdpQ" value="associationName">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+          <attributes xmi:id="_rkxZBttBEe6Lhpxg72ZdpQ" value="association_name">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxZB9tBEe6Lhpxg72ZdpQ" name="fromA"/>
+      <parameters xmi:id="_rkxZCNtBEe6Lhpxg72ZdpQ" name="oldB"/>
+      <parameters xmi:id="_rkxZCdtBEe6Lhpxg72ZdpQ" name="attributeNameB"/>
+      <parameters xmi:id="_rkxZCttBEe6Lhpxg72ZdpQ" name="fromB"/>
+      <parameters xmi:id="_rkxZC9tBEe6Lhpxg72ZdpQ" name="oldA"/>
+      <parameters xmi:id="_rkxZDNtBEe6Lhpxg72ZdpQ" name="attributeNameA"/>
+      <parameters xmi:id="_rkxZDdtBEe6Lhpxg72ZdpQ" name="fromAssociation"/>
+      <parameters xmi:id="_rkxZDttBEe6Lhpxg72ZdpQ" name="associationName"/>
+      <parameters xmi:id="_rkxZD9tBEe6Lhpxg72ZdpQ" name="association_name"/>
+    </patterns>
+    <patterns xmi:id="_rkxZENtBEe6Lhpxg72ZdpQ" name="Transform: NavigableAssociation - To - DirectionalNavigableAssociation">
+      <graphs xmi:id="_rkxZEdtBEe6Lhpxg72ZdpQ" name="Transform: NavigableAssociation - To - DirectionalNavigableAssociation">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxZEttBEe6Lhpxg72ZdpQ" name="A" incomings="_rkxZFttBEe6Lhpxg72ZdpQ _rkxZHNtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxZE9tBEe6Lhpxg72ZdpQ" target="_rkxZFNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxZFNtBEe6Lhpxg72ZdpQ" name="b" incomings="_rkxZE9tBEe6Lhpxg72ZdpQ _rkxZI9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxZFdtBEe6Lhpxg72ZdpQ" target="_rkxZGdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZFttBEe6Lhpxg72ZdpQ" target="_rkxZEttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#require"/>
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#pre"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZF9tBEe6Lhpxg72ZdpQ" target="_rkxZIdtBEe6Lhpxg72ZdpQ" opposite="_rkxZI9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxZGNtBEe6Lhpxg72ZdpQ" value="attributeNameB">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxZGdtBEe6Lhpxg72ZdpQ" name="B" incomings="_rkxZHdtBEe6Lhpxg72ZdpQ _rkxZFdtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxZGttBEe6Lhpxg72ZdpQ" target="_rkxZG9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxZG9tBEe6Lhpxg72ZdpQ" name="a" incomings="_rkxZGttBEe6Lhpxg72ZdpQ _rkxZIttBEe6Lhpxg72ZdpQ _rkxZJNtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxZHNtBEe6Lhpxg72ZdpQ" target="_rkxZEttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZHdtBEe6Lhpxg72ZdpQ" target="_rkxZGdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#require"/>
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#pre"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZHttBEe6Lhpxg72ZdpQ" target="_rkxZIdtBEe6Lhpxg72ZdpQ" opposite="_rkxZIttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZH9tBEe6Lhpxg72ZdpQ" target="_rkxZIdtBEe6Lhpxg72ZdpQ" opposite="_rkxZJNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxZINtBEe6Lhpxg72ZdpQ" value="attributeNameA">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxZIdtBEe6Lhpxg72ZdpQ" name="association" incomings="_rkxZF9tBEe6Lhpxg72ZdpQ _rkxZHttBEe6Lhpxg72ZdpQ _rkxZH9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxZIttBEe6Lhpxg72ZdpQ" target="_rkxZG9tBEe6Lhpxg72ZdpQ" opposite="_rkxZHttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZI9tBEe6Lhpxg72ZdpQ" target="_rkxZFNtBEe6Lhpxg72ZdpQ" opposite="_rkxZF9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZJNtBEe6Lhpxg72ZdpQ" target="_rkxZG9tBEe6Lhpxg72ZdpQ" opposite="_rkxZH9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+          <attributes xmi:id="_rkxZJdtBEe6Lhpxg72ZdpQ" value="associationName">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxZJttBEe6Lhpxg72ZdpQ" name="attributeNameB"/>
+      <parameters xmi:id="_rkxZJ9tBEe6Lhpxg72ZdpQ" name="B"/>
+      <parameters xmi:id="_rkxZKNtBEe6Lhpxg72ZdpQ" name="a"/>
+      <parameters xmi:id="_rkxZKdtBEe6Lhpxg72ZdpQ" name="attributeNameA"/>
+      <parameters xmi:id="_rkxZKttBEe6Lhpxg72ZdpQ" name="association"/>
+      <parameters xmi:id="_rkxZK9tBEe6Lhpxg72ZdpQ" name="associationName"/>
+    </patterns>
+    <patterns xmi:id="_rkxZLNtBEe6Lhpxg72ZdpQ" name="Transform: NavigableAssociation - To - NonNavigableAssociation">
+      <graphs xmi:id="_rkxZLdtBEe6Lhpxg72ZdpQ" name="Transform: NavigableAssociation - To - NonNavigableAssociation">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxZLttBEe6Lhpxg72ZdpQ" name="A" incomings="_rkxZMttBEe6Lhpxg72ZdpQ _rkxZOdtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxZL9tBEe6Lhpxg72ZdpQ" target="_rkxZMNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxZMNtBEe6Lhpxg72ZdpQ" name="b" incomings="_rkxZL9tBEe6Lhpxg72ZdpQ _rkxZQNtBEe6Lhpxg72ZdpQ _rkxZQttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxZMdtBEe6Lhpxg72ZdpQ" target="_rkxZNttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZMttBEe6Lhpxg72ZdpQ" target="_rkxZLttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#require"/>
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#pre"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZM9tBEe6Lhpxg72ZdpQ" target="_rkxZPttBEe6Lhpxg72ZdpQ" opposite="_rkxZQNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZNNtBEe6Lhpxg72ZdpQ" target="_rkxZPttBEe6Lhpxg72ZdpQ" opposite="_rkxZQttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxZNdtBEe6Lhpxg72ZdpQ" value="attributeNameB">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxZNttBEe6Lhpxg72ZdpQ" name="B" incomings="_rkxZOttBEe6Lhpxg72ZdpQ _rkxZMdtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxZN9tBEe6Lhpxg72ZdpQ" target="_rkxZONtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxZONtBEe6Lhpxg72ZdpQ" name="a" incomings="_rkxZN9tBEe6Lhpxg72ZdpQ _rkxZP9tBEe6Lhpxg72ZdpQ _rkxZQdtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxZOdtBEe6Lhpxg72ZdpQ" target="_rkxZLttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZOttBEe6Lhpxg72ZdpQ" target="_rkxZNttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#require"/>
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#pre"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZO9tBEe6Lhpxg72ZdpQ" target="_rkxZPttBEe6Lhpxg72ZdpQ" opposite="_rkxZP9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZPNtBEe6Lhpxg72ZdpQ" target="_rkxZPttBEe6Lhpxg72ZdpQ" opposite="_rkxZQdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/owningAssociation"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxZPdtBEe6Lhpxg72ZdpQ" value="attributeNameA">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxZPttBEe6Lhpxg72ZdpQ" name="association" incomings="_rkxZM9tBEe6Lhpxg72ZdpQ _rkxZO9tBEe6Lhpxg72ZdpQ _rkxZPNtBEe6Lhpxg72ZdpQ _rkxZNNtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxZP9tBEe6Lhpxg72ZdpQ" target="_rkxZONtBEe6Lhpxg72ZdpQ" opposite="_rkxZO9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZQNtBEe6Lhpxg72ZdpQ" target="_rkxZMNtBEe6Lhpxg72ZdpQ" opposite="_rkxZM9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZQdtBEe6Lhpxg72ZdpQ" target="_rkxZONtBEe6Lhpxg72ZdpQ" opposite="_rkxZPNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZQttBEe6Lhpxg72ZdpQ" target="_rkxZMNtBEe6Lhpxg72ZdpQ" opposite="_rkxZNNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/ownedEnd"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+          <attributes xmi:id="_rkxZQ9tBEe6Lhpxg72ZdpQ" value="associationName">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxZRNtBEe6Lhpxg72ZdpQ" name="A"/>
+      <parameters xmi:id="_rkxZRdtBEe6Lhpxg72ZdpQ" name="b"/>
+      <parameters xmi:id="_rkxZRttBEe6Lhpxg72ZdpQ" name="attributeNameB"/>
+      <parameters xmi:id="_rkxZR9tBEe6Lhpxg72ZdpQ" name="B"/>
+      <parameters xmi:id="_rkxZSNtBEe6Lhpxg72ZdpQ" name="a"/>
+      <parameters xmi:id="_rkxZSdtBEe6Lhpxg72ZdpQ" name="attributeNameA"/>
+      <parameters xmi:id="_rkxZSttBEe6Lhpxg72ZdpQ" name="association"/>
+      <parameters xmi:id="_rkxZS9tBEe6Lhpxg72ZdpQ" name="associationName"/>
+    </patterns>
+    <patterns xmi:id="_rkxZTNtBEe6Lhpxg72ZdpQ" name="Relocation: NavigableAssociation">
+      <graphs xmi:id="_rkxZTdtBEe6Lhpxg72ZdpQ" name="Relocation: NavigableAssociation">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxZTttBEe6Lhpxg72ZdpQ" name="fromA" incomings="_rkxZUttBEe6Lhpxg72ZdpQ _rkxZWttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxZT9tBEe6Lhpxg72ZdpQ" target="_rkxZUNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxZUNtBEe6Lhpxg72ZdpQ" name="b" incomings="_rkxZT9tBEe6Lhpxg72ZdpQ _rkxZYttBEe6Lhpxg72ZdpQ _rkxZZdtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxZUdtBEe6Lhpxg72ZdpQ" target="_rkxZV9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZUttBEe6Lhpxg72ZdpQ" target="_rkxZTttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#require"/>
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#pre"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZU9tBEe6Lhpxg72ZdpQ" target="_rkxZYNtBEe6Lhpxg72ZdpQ" opposite="_rkxZYttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZVNtBEe6Lhpxg72ZdpQ" target="_rkxZZttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZVdtBEe6Lhpxg72ZdpQ" target="_rkxZZNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#require"/>
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#post"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxZVttBEe6Lhpxg72ZdpQ" value="attributeNameB">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxZV9tBEe6Lhpxg72ZdpQ" name="fromB" incomings="_rkxZUdtBEe6Lhpxg72ZdpQ _rkxZW9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxZWNtBEe6Lhpxg72ZdpQ" target="_rkxZWdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxZWdtBEe6Lhpxg72ZdpQ" name="a" incomings="_rkxZWNtBEe6Lhpxg72ZdpQ _rkxZYdtBEe6Lhpxg72ZdpQ _rkxZZ9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxZWttBEe6Lhpxg72ZdpQ" target="_rkxZTttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZW9tBEe6Lhpxg72ZdpQ" target="_rkxZV9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#require"/>
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#pre"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZXNtBEe6Lhpxg72ZdpQ" target="_rkxZYNtBEe6Lhpxg72ZdpQ" opposite="_rkxZYdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/association"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZXdtBEe6Lhpxg72ZdpQ" target="_rkxZZNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZXttBEe6Lhpxg72ZdpQ" target="_rkxZZttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#require"/>
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#post"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxZX9tBEe6Lhpxg72ZdpQ" value="attributeNameA">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxZYNtBEe6Lhpxg72ZdpQ" name="association" incomings="_rkxZU9tBEe6Lhpxg72ZdpQ _rkxZXNtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxZYdtBEe6Lhpxg72ZdpQ" target="_rkxZWdtBEe6Lhpxg72ZdpQ" opposite="_rkxZXNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxZYttBEe6Lhpxg72ZdpQ" target="_rkxZUNtBEe6Lhpxg72ZdpQ" opposite="_rkxZU9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association/memberEnd"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+          <attributes xmi:id="_rkxZY9tBEe6Lhpxg72ZdpQ" value="associationName">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxZZNtBEe6Lhpxg72ZdpQ" name="toA" incomings="_rkxZVdtBEe6Lhpxg72ZdpQ _rkxZXdtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxZZdtBEe6Lhpxg72ZdpQ" target="_rkxZUNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxZZttBEe6Lhpxg72ZdpQ" name="toB" incomings="_rkxZVNtBEe6Lhpxg72ZdpQ _rkxZXttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxZZ9tBEe6Lhpxg72ZdpQ" target="_rkxZWdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxZaNtBEe6Lhpxg72ZdpQ" name="fromA"/>
+      <parameters xmi:id="_rkxZadtBEe6Lhpxg72ZdpQ" name="b"/>
+      <parameters xmi:id="_rkxZattBEe6Lhpxg72ZdpQ" name="attributeNameB"/>
+      <parameters xmi:id="_rkxZa9tBEe6Lhpxg72ZdpQ" name="fromB"/>
+      <parameters xmi:id="_rkxZbNtBEe6Lhpxg72ZdpQ" name="a"/>
+      <parameters xmi:id="_rkxZbdtBEe6Lhpxg72ZdpQ" name="attributeNameA"/>
+      <parameters xmi:id="_rkxZbttBEe6Lhpxg72ZdpQ" name="associationName"/>
+      <parameters xmi:id="_rkxZb9tBEe6Lhpxg72ZdpQ" name="toA"/>
+      <parameters xmi:id="_rkxZcNtBEe6Lhpxg72ZdpQ" name="toB"/>
+    </patterns>
   </patterns>
   <patterns xmi:id="_X5HNs9szEe6Kjc5SMn0ZtA" name="UniqueAttributeName" description="The name of an attribute in a class must be unique.">
     <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.constraints#constraint"/>
+    <graphs xmi:id="_rjtAoNtBEe6Lhpxg72ZdpQ" name="DataTypeAttributeInClass">
+      <nodes xmi:id="_rjtAodtBEe6Lhpxg72ZdpQ" name="A" incomings="_rjtApdtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjtAottBEe6Lhpxg72ZdpQ" target="_rjtAo9tBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rjtAo9tBEe6Lhpxg72ZdpQ" name="attribute" incomings="_rjtAottBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjtApNtBEe6Lhpxg72ZdpQ" target="_rjtAp9tBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+        </outgoings>
+        <outgoings xmi:id="_rjtApdtBEe6Lhpxg72ZdpQ" target="_rjtAodtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        <attributes xmi:id="_rjtApttBEe6Lhpxg72ZdpQ" value="attributeName">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rjtAp9tBEe6Lhpxg72ZdpQ" name="D" incomings="_rjtApNtBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//DataType"/>
+      </nodes>
+    </graphs>
+    <graphs xmi:id="_rjuOwNtBEe6Lhpxg72ZdpQ" name="EnumerationAttributeInClass">
+      <nodes xmi:id="_rjuOwdtBEe6Lhpxg72ZdpQ" name="A" incomings="_rjuOxdtBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjuOwttBEe6Lhpxg72ZdpQ" target="_rjuOw9tBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rjuOw9tBEe6Lhpxg72ZdpQ" name="attribute" incomings="_rjuOwttBEe6Lhpxg72ZdpQ">
+        <outgoings xmi:id="_rjuOxNtBEe6Lhpxg72ZdpQ" target="_rjuOx9tBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+        </outgoings>
+        <outgoings xmi:id="_rjuOxdtBEe6Lhpxg72ZdpQ" target="_rjuOwdtBEe6Lhpxg72ZdpQ">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+        </outgoings>
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        <attributes xmi:id="_rjuOxttBEe6Lhpxg72ZdpQ" value="attributeName">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rjuOx9tBEe6Lhpxg72ZdpQ" name="E" incomings="_rjuOxNtBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Enumeration"/>
+      </nodes>
+    </graphs>
+    <patterns xmi:id="_rkxYcNtBEe6Lhpxg72ZdpQ" name="Create: EnumerationAttributeInClass">
+      <graphs xmi:id="_rkxYcdtBEe6Lhpxg72ZdpQ" name="Create: EnumerationAttributeInClass">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxYcttBEe6Lhpxg72ZdpQ" name="toA" incomings="_rkxYdttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxYc9tBEe6Lhpxg72ZdpQ" target="_rkxYdNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxYdNtBEe6Lhpxg72ZdpQ" name="newAttribute" incomings="_rkxYc9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+          <outgoings xmi:id="_rkxYddtBEe6Lhpxg72ZdpQ" target="_rkxYeNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYdttBEe6Lhpxg72ZdpQ" target="_rkxYcttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxYd9tBEe6Lhpxg72ZdpQ" value="attributeName">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxYeNtBEe6Lhpxg72ZdpQ" name="toE" incomings="_rkxYddtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Enumeration"/>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxYedtBEe6Lhpxg72ZdpQ" name="toA"/>
+      <parameters xmi:id="_rkxYettBEe6Lhpxg72ZdpQ" name="attributeName"/>
+      <parameters xmi:id="_rkxYe9tBEe6Lhpxg72ZdpQ" name="toE"/>
+    </patterns>
+    <patterns xmi:id="_rkxYfNtBEe6Lhpxg72ZdpQ" name="Delete: EnumerationAttributeInClass">
+      <graphs xmi:id="_rkxYfdtBEe6Lhpxg72ZdpQ" name="Delete: EnumerationAttributeInClass">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxYfttBEe6Lhpxg72ZdpQ" name="fromA" incomings="_rkxYgttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxYf9tBEe6Lhpxg72ZdpQ" target="_rkxYgNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxYgNtBEe6Lhpxg72ZdpQ" name="oldAttribute" incomings="_rkxYf9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+          <outgoings xmi:id="_rkxYgdtBEe6Lhpxg72ZdpQ" target="_rkxYhNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYgttBEe6Lhpxg72ZdpQ" target="_rkxYfttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#require"/>
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#pre"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxYg9tBEe6Lhpxg72ZdpQ" value="attributeName">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxYhNtBEe6Lhpxg72ZdpQ" name="fromE" incomings="_rkxYgdtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Enumeration"/>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxYhdtBEe6Lhpxg72ZdpQ" name="fromA"/>
+      <parameters xmi:id="_rkxYhttBEe6Lhpxg72ZdpQ" name="oldAttribute"/>
+      <parameters xmi:id="_rkxYh9tBEe6Lhpxg72ZdpQ" name="attributeName"/>
+      <parameters xmi:id="_rkxYiNtBEe6Lhpxg72ZdpQ" name="fromE"/>
+    </patterns>
+    <patterns xmi:id="_rkxYidtBEe6Lhpxg72ZdpQ" name="Create: DataTypeAttributeInClass">
+      <graphs xmi:id="_rkxYittBEe6Lhpxg72ZdpQ" name="Create: DataTypeAttributeInClass">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxYi9tBEe6Lhpxg72ZdpQ" name="toA" incomings="_rkxYj9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxYjNtBEe6Lhpxg72ZdpQ" target="_rkxYjdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxYjdtBEe6Lhpxg72ZdpQ" name="newAttribute" incomings="_rkxYjNtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+          <outgoings xmi:id="_rkxYjttBEe6Lhpxg72ZdpQ" target="_rkxYkdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYj9tBEe6Lhpxg72ZdpQ" target="_rkxYi9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxYkNtBEe6Lhpxg72ZdpQ" value="attributeName">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxYkdtBEe6Lhpxg72ZdpQ" name="toD" incomings="_rkxYjttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//DataType"/>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxYkttBEe6Lhpxg72ZdpQ" name="toA"/>
+      <parameters xmi:id="_rkxYk9tBEe6Lhpxg72ZdpQ" name="attributeName"/>
+      <parameters xmi:id="_rkxYlNtBEe6Lhpxg72ZdpQ" name="toD"/>
+    </patterns>
+    <patterns xmi:id="_rkxYldtBEe6Lhpxg72ZdpQ" name="Delete: DataTypeAttributeInClass">
+      <graphs xmi:id="_rkxYlttBEe6Lhpxg72ZdpQ" name="Delete: DataTypeAttributeInClass">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxYl9tBEe6Lhpxg72ZdpQ" name="fromA" incomings="_rkxYm9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxYmNtBEe6Lhpxg72ZdpQ" target="_rkxYmdtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxYmdtBEe6Lhpxg72ZdpQ" name="oldAttribute" incomings="_rkxYmNtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+          <outgoings xmi:id="_rkxYmttBEe6Lhpxg72ZdpQ" target="_rkxYndtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYm9tBEe6Lhpxg72ZdpQ" target="_rkxYl9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#require"/>
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#pre"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxYnNtBEe6Lhpxg72ZdpQ" value="attributeName">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxYndtBEe6Lhpxg72ZdpQ" name="fromD" incomings="_rkxYmttBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//DataType"/>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxYnttBEe6Lhpxg72ZdpQ" name="fromA"/>
+      <parameters xmi:id="_rkxYn9tBEe6Lhpxg72ZdpQ" name="oldAttribute"/>
+      <parameters xmi:id="_rkxYoNtBEe6Lhpxg72ZdpQ" name="attributeName"/>
+      <parameters xmi:id="_rkxYodtBEe6Lhpxg72ZdpQ" name="fromD"/>
+    </patterns>
+    <patterns xmi:id="_rkxYottBEe6Lhpxg72ZdpQ" name="Transform: DataTypeAttributeInClass - To - EnumerationAttributeInClass">
+      <graphs xmi:id="_rkxYo9tBEe6Lhpxg72ZdpQ" name="Transform: DataTypeAttributeInClass - To - EnumerationAttributeInClass">
+        <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#rule"/>
+        <nodes xmi:id="_rkxYpNtBEe6Lhpxg72ZdpQ" name="A" incomings="_rkxYqNtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxYpdtBEe6Lhpxg72ZdpQ" target="_rkxYpttBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </nodes>
+        <nodes xmi:id="_rkxYpttBEe6Lhpxg72ZdpQ" name="attribute" incomings="_rkxYpdtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <outgoings xmi:id="_rkxYp9tBEe6Lhpxg72ZdpQ" target="_rkxYq9tBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#delete"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYqNtBEe6Lhpxg72ZdpQ" target="_rkxYpNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#require"/>
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#pre"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+          </outgoings>
+          <outgoings xmi:id="_rkxYqdtBEe6Lhpxg72ZdpQ" target="_rkxYrNtBEe6Lhpxg72ZdpQ">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#create"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+          </outgoings>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributes xmi:id="_rkxYqttBEe6Lhpxg72ZdpQ" value="attributeName">
+            <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+            <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_rkxYq9tBEe6Lhpxg72ZdpQ" name="fromD" incomings="_rkxYp9tBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//DataType"/>
+        </nodes>
+        <nodes xmi:id="_rkxYrNtBEe6Lhpxg72ZdpQ" name="toE" incomings="_rkxYqdtBEe6Lhpxg72ZdpQ">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.henshin#preserve"/>
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Enumeration"/>
+        </nodes>
+      </graphs>
+      <parameters xmi:id="_rkxYrdtBEe6Lhpxg72ZdpQ" name="attribute"/>
+      <parameters xmi:id="_rkxYrttBEe6Lhpxg72ZdpQ" name="attributeName"/>
+      <parameters xmi:id="_rkxYr9tBEe6Lhpxg72ZdpQ" name="fromD"/>
+      <parameters xmi:id="_rkxYsNtBEe6Lhpxg72ZdpQ" name="toE"/>
+    </patterns>
   </patterns>
   <patterns xmi:id="_YaWSgNszEe6Kjc5SMn0ZtA" name="RELOCATION_EDGES">
     <graphs xmi:id="_YaZV0NszEe6Kjc5SMn0ZtA" name="[ : Activity] - ownedGroup -> [ : ActivityGroup]">

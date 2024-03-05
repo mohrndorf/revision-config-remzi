@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_rlV_YNtBEe6Lhpxg72ZdpQ" name="Create: DataTypeAttributeInClass" description="Create: DataTypeAttributeInClass">
+  <units xsi:type="henshin:SequentialUnit" xmi:id="_rlV_YdtBEe6Lhpxg72ZdpQ" name="Create: DataTypeAttributeInClass" subUnits="_rlV_aNtBEe6Lhpxg72ZdpQ">
+    <parameters xmi:id="_rlV_YttBEe6Lhpxg72ZdpQ" name="toA" kind="IN"/>
+    <parameters xmi:id="_rlV_Y9tBEe6Lhpxg72ZdpQ" name="attributeName" kind="IN"/>
+    <parameters xmi:id="_rlV_ZNtBEe6Lhpxg72ZdpQ" name="toD" kind="IN"/>
+    <parameterMappings xmi:id="_rlV_ZdtBEe6Lhpxg72ZdpQ" source="_rlV_YttBEe6Lhpxg72ZdpQ" target="_rlV_adtBEe6Lhpxg72ZdpQ"/>
+    <parameterMappings xmi:id="_rlV_ZttBEe6Lhpxg72ZdpQ" source="_rlV_Y9tBEe6Lhpxg72ZdpQ" target="_rlV_attBEe6Lhpxg72ZdpQ"/>
+    <parameterMappings xmi:id="_rlV_Z9tBEe6Lhpxg72ZdpQ" source="_rlV_ZNtBEe6Lhpxg72ZdpQ" target="_rlV_a9tBEe6Lhpxg72ZdpQ"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_rlV_aNtBEe6Lhpxg72ZdpQ" name="Create: DataTypeAttributeInClass">
+    <parameters xmi:id="_rlV_adtBEe6Lhpxg72ZdpQ" name="toA" kind="IN"/>
+    <parameters xmi:id="_rlV_attBEe6Lhpxg72ZdpQ" name="attributeName" kind="IN"/>
+    <parameters xmi:id="_rlV_a9tBEe6Lhpxg72ZdpQ" name="toD" kind="IN"/>
+    <lhs xmi:id="_rlV_bNtBEe6Lhpxg72ZdpQ" name="Lhs">
+      <nodes xmi:id="_rlV_bdtBEe6Lhpxg72ZdpQ" name="toA">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rlV_bttBEe6Lhpxg72ZdpQ" name="toD">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//DataType"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_rlV_b9tBEe6Lhpxg72ZdpQ" name="Rhs">
+      <nodes xmi:id="_rlV_cNtBEe6Lhpxg72ZdpQ" name="toA" incoming="_rlV_dttBEe6Lhpxg72ZdpQ" outgoing="_rlV_dNtBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_rlV_cdtBEe6Lhpxg72ZdpQ" name="newAttribute" incoming="_rlV_dNtBEe6Lhpxg72ZdpQ" outgoing="_rlV_ddtBEe6Lhpxg72ZdpQ _rlV_dttBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        <attributes xmi:id="_rlV_cttBEe6Lhpxg72ZdpQ" value="attributeName">
+          <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rlV_c9tBEe6Lhpxg72ZdpQ" name="toD" incoming="_rlV_ddtBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//DataType"/>
+      </nodes>
+      <edges xmi:id="_rlV_dNtBEe6Lhpxg72ZdpQ" source="_rlV_cNtBEe6Lhpxg72ZdpQ" target="_rlV_cdtBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+      </edges>
+      <edges xmi:id="_rlV_ddtBEe6Lhpxg72ZdpQ" source="_rlV_cdtBEe6Lhpxg72ZdpQ" target="_rlV_c9tBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+      </edges>
+      <edges xmi:id="_rlV_dttBEe6Lhpxg72ZdpQ" source="_rlV_cdtBEe6Lhpxg72ZdpQ" target="_rlV_cNtBEe6Lhpxg72ZdpQ">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_rlV_d9tBEe6Lhpxg72ZdpQ" origin="_rlV_bdtBEe6Lhpxg72ZdpQ" image="_rlV_cNtBEe6Lhpxg72ZdpQ"/>
+    <mappings xmi:id="_rlV_eNtBEe6Lhpxg72ZdpQ" origin="_rlV_bttBEe6Lhpxg72ZdpQ" image="_rlV_c9tBEe6Lhpxg72ZdpQ"/>
+  </units>
+</henshin:Module>
