@@ -1,0 +1,47 @@
+/*
+ * Constraint Library for Document Type: http://www.eclipse.org/uml2/5.0.0/UML
+ */
+
+domain 'http://www.eclipse.org/uml2/5.0.0/UML'
+
+// Easy:
+/*
+ * self.ownedAttribute->forAll(attrA| self.ownedAttribute->forAll(attrB | attrA<>attrB implies (attrA.name<>attrB.name)))
+ */
+constraint UniqueAttributeName
+message "The name of an attribute in a class must be unique."
+context Class self :
+	forAll(Property attrA in self.ownedAttribute :
+		forAll(Property attrB in self.ownedAttribute :
+			not(isEqual(attrA, attrB))
+			implies
+			not(isEqual(attrA.name, attrB.name))))
+
+// Medium:
+constraint CyclicInheritance
+message "Two classes cannot inherit from each other."
+context Class self :
+	forAll(Generalization generalizationA in self.generalization :
+		forAll(Class superClass in generalizationA.general :
+			not(exists(Generalization generalizationB in superClass.generalization :
+					isEqual(generalizationB.general, self)))))
+
+// Hard:
+/*
+ * self.attribute->forAll(at | at.type.oclIsKindOf(Class) implies Association.allInstances()->exists(association | association.memberEnd.type->includes(at.type) and association.memberEnd.type->includes(self)))
+ */
+constraint MissingAssociation
+message "An attribute with a class type must be represented by an association."
+context Class self :
+	forAll(Property at in self.ownedAttribute :
+		isInstanceOf(at.type, Class)
+		implies
+		exists(Package model in getContainer(self) : 				// Association.allInstances()
+			exists(Association association in model.ownedElement : 	// |
+				isInstanceOf(association, Association) 				// |
+				and
+				exists(Property end in association.memberEnd :
+					isEqual(end.type, at.type))
+				and
+				exists(Property end in association.memberEnd :
+					isEqual(end.type, self)))))

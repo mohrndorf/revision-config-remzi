@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_yHJuENsWEe6mTt6opmHDHA" name="test">
+  <packagedElement xmi:type="uml:Class" xmi:id="_0MBI0NsWEe6mTt6opmHDHA" name="A">
+    <ownedAttribute xmi:id="_6VVQcNsWEe6mTt6opmHDHA" name="b" type="_08sX0NsWEe6mTt6opmHDHA" association="_6VNUoNsWEe6mTt6opmHDHA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_08sX0NsWEe6mTt6opmHDHA" name="B">
+    <ownedAttribute xmi:id="_6VS0MNsWEe6mTt6opmHDHA" name="a" type="_0MBI0NsWEe6mTt6opmHDHA" association="_6VNUoNsWEe6mTt6opmHDHA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6VNUoNsWEe6mTt6opmHDHA" memberEnd="_6VS0MNsWEe6mTt6opmHDHA _6VVQcNsWEe6mTt6opmHDHA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_gUCxcNsZEe69koVk9IPVgg" name="X">
+    <ownedAttribute xmi:id="_gUCxcdsZEe69koVk9IPVgg" name="y" type="_gUD_kNsZEe69koVk9IPVgg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_gUD_kNsZEe69koVk9IPVgg" name="Y">
+    <ownedAttribute xmi:id="_gUD_kdsZEe69koVk9IPVgg" name="x" type="_gUCxcNsZEe69koVk9IPVgg"/>
+  </packagedElement>
+</uml:Model>

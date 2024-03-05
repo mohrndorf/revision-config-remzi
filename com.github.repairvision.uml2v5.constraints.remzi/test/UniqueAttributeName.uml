@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_r-qNMNsTEe67WeBSAYdiZQ" name="Test">
+  <packagedElement xmi:type="uml:Class" xmi:id="_KgjpQNsUEe67WeBSAYdiZQ" name="A">
+    <ownedAttribute xmi:id="_KgjpQdsUEe67WeBSAYdiZQ" name="foo" type="_ymC3QNsbEe62FM6xllHuiw"/>
+    <ownedAttribute xmi:id="_KgjpQtsUEe67WeBSAYdiZQ" name="foo" type="_NogYANscEe62FM6xllHuiw"/>
+    <ownedAttribute xmi:id="_KgjpQ9sUEe67WeBSAYdiZQ" name="bar" type="_ymC3QNsbEe62FM6xllHuiw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uQTfsNsTEe67WeBSAYdiZQ" name="B">
+    <ownedAttribute xmi:id="_UoSNkNscEe62FM6xllHuiw" name="foo" type="_ymC3QNsbEe62FM6xllHuiw"/>
+    <ownedAttribute xmi:id="_UoSNkdscEe62FM6xllHuiw" name="foo" type="_NogYANscEe62FM6xllHuiw"/>
+    <ownedAttribute xmi:id="_UoSNktscEe62FM6xllHuiw" name="bar" type="_ymC3QNsbEe62FM6xllHuiw"/>
+    <ownedAttribute xmi:id="_U6FvQNscEe62FM6xllHuiw" name="bar" type="_ymC3QNsbEe62FM6xllHuiw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JH_T0NsUEe67WeBSAYdiZQ" name="C">
+    <ownedAttribute xmi:id="_WAk2MNscEe62FM6xllHuiw" name="foo" type="_NogYANscEe62FM6xllHuiw"/>
+    <ownedAttribute xmi:id="_WAk2MdscEe62FM6xllHuiw" name="bar" type="_ymC3QNsbEe62FM6xllHuiw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_ymC3QNsbEe62FM6xllHuiw" name="D"/>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_NogYANscEe62FM6xllHuiw" name="E"/>
+</uml:Model>
