@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<difference:Difference xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:difference="http://www.sidiff.org/revision/difference/1.0" uriModelA="platform:/resource/com.github.repairvision.uml2v5.editrules.remzi/scenarios/UniqueAttributeName/ModelVersionA/UniqueAttributeName.uml" uriModelB="platform:/resource/com.github.repairvision.uml2v5.editrules.remzi/scenarios/UniqueAttributeName/ModelVersionB/UniqueAttributeName.uml">
+  <changes xsi:type="difference:AddReference">
+    <src href="../ModelVersionB/UniqueAttributeName.uml#_sMUT4N1yEe6lQ8qhkG68yw"/>
+    <tgt href="../ModelVersionB/UniqueAttributeName.uml#_9m4GQN1yEe6lQ8qhkG68yw"/>
+    <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+  </changes>
+  <changes xsi:type="difference:AddObject">
+    <obj href="../ModelVersionB/UniqueAttributeName.uml#_9m4GQN1yEe6lQ8qhkG68yw"/>
+  </changes>
+  <changes xsi:type="difference:AddReference">
+    <src href="../ModelVersionB/UniqueAttributeName.uml#_9m4GQN1yEe6lQ8qhkG68yw"/>
+    <tgt href="../ModelVersionB/UniqueAttributeName.uml#_s8dXYN1yEe6lQ8qhkG68yw"/>
+    <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+  </changes>
+  <changes xsi:type="difference:AddReference">
+    <src href="../ModelVersionB/UniqueAttributeName.uml#_9m4GQN1yEe6lQ8qhkG68yw"/>
+    <tgt href="../ModelVersionB/UniqueAttributeName.uml#_sMUT4N1yEe6lQ8qhkG68yw"/>
+    <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+  </changes>
+  <correspondences>
+    <matchedA href="UniqueAttributeName.uml#_ol6N4N1yEe6lQ8qhkG68yw"/>
+    <matchedB href="../ModelVersionB/UniqueAttributeName.uml#_ol6N4N1yEe6lQ8qhkG68yw"/>
+  </correspondences>
+  <correspondences>
+    <matchedA href="UniqueAttributeName.uml#_sMUT4N1yEe6lQ8qhkG68yw"/>
+    <matchedB href="../ModelVersionB/UniqueAttributeName.uml#_sMUT4N1yEe6lQ8qhkG68yw"/>
+  </correspondences>
+  <correspondences>
+    <matchedA href="UniqueAttributeName.uml#_wUMIMN1yEe6lQ8qhkG68yw"/>
+    <matchedB href="../ModelVersionB/UniqueAttributeName.uml#_wUMIMN1yEe6lQ8qhkG68yw"/>
+  </correspondences>
+  <correspondences>
+    <matchedA href="UniqueAttributeName.uml#_s8dXYN1yEe6lQ8qhkG68yw"/>
+    <matchedB href="../ModelVersionB/UniqueAttributeName.uml#_s8dXYN1yEe6lQ8qhkG68yw"/>
+  </correspondences>
+</difference:Difference>

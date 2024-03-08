@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<difference:Difference xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:difference="http://www.sidiff.org/revision/difference/1.0" uriModelA="platform:/resource/com.github.repairvision.uml2v5.editrules.remzi/scenarios/CyclicInheritance/ModelVersionA/CyclicInheritance.uml" uriModelB="platform:/resource/com.github.repairvision.uml2v5.editrules.remzi/scenarios/CyclicInheritance/ModelVersionB/CyclicInheritance.uml">
+  <changes xsi:type="difference:AddReference">
+    <src href="../ModelVersionB/CyclicInheritance.uml#_TsdIMN1xEe6lQ8qhkG68yw"/>
+    <tgt href="../ModelVersionB/CyclicInheritance.uml#_axml8N1xEe6lQ8qhkG68yw"/>
+    <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/generalization"/>
+  </changes>
+  <changes xsi:type="difference:AddObject">
+    <obj href="../ModelVersionB/CyclicInheritance.uml#_axml8N1xEe6lQ8qhkG68yw"/>
+  </changes>
+  <changes xsi:type="difference:AddReference">
+    <src href="../ModelVersionB/CyclicInheritance.uml#_axml8N1xEe6lQ8qhkG68yw"/>
+    <tgt href="../ModelVersionB/CyclicInheritance.uml#_S_Pc4N1xEe6lQ8qhkG68yw"/>
+    <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/general"/>
+  </changes>
+  <changes xsi:type="difference:AddReference">
+    <src href="../ModelVersionB/CyclicInheritance.uml#_axml8N1xEe6lQ8qhkG68yw"/>
+    <tgt href="../ModelVersionB/CyclicInheritance.uml#_TsdIMN1xEe6lQ8qhkG68yw"/>
+    <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/specific"/>
+  </changes>
+  <correspondences>
+    <matchedA href="CyclicInheritance.uml#_KMUOsN1xEe6lQ8qhkG68yw"/>
+    <matchedB href="../ModelVersionB/CyclicInheritance.uml#_KMUOsN1xEe6lQ8qhkG68yw"/>
+  </correspondences>
+  <correspondences>
+    <matchedA href="CyclicInheritance.uml#_S_Pc4N1xEe6lQ8qhkG68yw"/>
+    <matchedB href="../ModelVersionB/CyclicInheritance.uml#_S_Pc4N1xEe6lQ8qhkG68yw"/>
+  </correspondences>
+  <correspondences>
+    <matchedA href="CyclicInheritance.uml#_ViAUkN1xEe6lQ8qhkG68yw"/>
+    <matchedB href="../ModelVersionB/CyclicInheritance.uml#_ViAUkN1xEe6lQ8qhkG68yw"/>
+  </correspondences>
+  <correspondences>
+    <matchedA href="CyclicInheritance.uml#_TsdIMN1xEe6lQ8qhkG68yw"/>
+    <matchedB href="../ModelVersionB/CyclicInheritance.uml#_TsdIMN1xEe6lQ8qhkG68yw"/>
+  </correspondences>
+</difference:Difference>

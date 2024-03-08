@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ol6N4N1yEe6lQ8qhkG68yw" name="UniqueAttributeName">
+  <packagedElement xmi:type="uml:Class" xmi:id="_sMUT4N1yEe6lQ8qhkG68yw" name="A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_wUMIMN1yEe6lQ8qhkG68yw" name="foo" type="_s8dXYN1yEe6lQ8qhkG68yw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_9m4GQN1yEe6lQ8qhkG68yw" name="foo2" type="_s8dXYN1yEe6lQ8qhkG68yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_s8dXYN1yEe6lQ8qhkG68yw" name="D"/>
+</uml:Model>
