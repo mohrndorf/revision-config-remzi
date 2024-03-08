@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_vukAsN10Ee6RmLI5YDeY0w" name="Relocation: Inheritance" description="Relocation: Inheritance">
+  <units xsi:type="henshin:SequentialUnit" xmi:id="_vukAsd10Ee6RmLI5YDeY0w" name="Relocation: Inheritance" subUnits="_vukAvN10Ee6RmLI5YDeY0w">
+    <parameters xmi:id="_vukAtd10Ee6RmLI5YDeY0w" name="classA" kind="IN"/>
+    <parameters xmi:id="_vukAtt10Ee6RmLI5YDeY0w" name="classB" kind="IN"/>
+    <parameterMappings xmi:id="_vukAut10Ee6RmLI5YDeY0w" source="_vukAtd10Ee6RmLI5YDeY0w" target="_vukAwN10Ee6RmLI5YDeY0w"/>
+    <parameterMappings xmi:id="_vukAu910Ee6RmLI5YDeY0w" source="_vukAtt10Ee6RmLI5YDeY0w" target="_vukAwd10Ee6RmLI5YDeY0w"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_vukAvN10Ee6RmLI5YDeY0w" name="Relocation: Inheritance">
+    <parameters xmi:id="_vukAwN10Ee6RmLI5YDeY0w" name="classA" kind="IN"/>
+    <parameters xmi:id="_vukAwd10Ee6RmLI5YDeY0w" name="classB" kind="IN"/>
+    <lhs xmi:id="_vukAwt10Ee6RmLI5YDeY0w" name="Lhs">
+      <nodes xmi:id="_vukAxN10Ee6RmLI5YDeY0w" name="oldGeneralization" incoming="_vukAyN10Ee6RmLI5YDeY0w" outgoing="_vukAyd10Ee6RmLI5YDeY0w _vukAyt10Ee6RmLI5YDeY0w">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization"/>
+      </nodes>
+      <nodes xmi:id="_vukAxt10Ee6RmLI5YDeY0w" name="classA" incoming="_vukAyd10Ee6RmLI5YDeY0w">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_vukAx910Ee6RmLI5YDeY0w" name="classB" incoming="_vukAyt10Ee6RmLI5YDeY0w" outgoing="_vukAyN10Ee6RmLI5YDeY0w">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <edges xmi:id="_vukAyN10Ee6RmLI5YDeY0w" source="_vukAx910Ee6RmLI5YDeY0w" target="_vukAxN10Ee6RmLI5YDeY0w">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/generalization"/>
+      </edges>
+      <edges xmi:id="_vukAyd10Ee6RmLI5YDeY0w" source="_vukAxN10Ee6RmLI5YDeY0w" target="_vukAxt10Ee6RmLI5YDeY0w">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/general"/>
+      </edges>
+      <edges xmi:id="_vukAyt10Ee6RmLI5YDeY0w" source="_vukAxN10Ee6RmLI5YDeY0w" target="_vukAx910Ee6RmLI5YDeY0w">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/specific"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_vukAy910Ee6RmLI5YDeY0w" name="Rhs">
+      <nodes xmi:id="_vukAzd10Ee6RmLI5YDeY0w" name="newGeneralization" incoming="_vukA0910Ee6RmLI5YDeY0w" outgoing="_vukA0d10Ee6RmLI5YDeY0w _vukA0t10Ee6RmLI5YDeY0w">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization"/>
+      </nodes>
+      <nodes xmi:id="_vukAz910Ee6RmLI5YDeY0w" name="classA" incoming="_vukA0t10Ee6RmLI5YDeY0w" outgoing="_vukA0910Ee6RmLI5YDeY0w">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <nodes xmi:id="_vukA0N10Ee6RmLI5YDeY0w" name="classB" incoming="_vukA0d10Ee6RmLI5YDeY0w">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+      </nodes>
+      <edges xmi:id="_vukA0d10Ee6RmLI5YDeY0w" source="_vukAzd10Ee6RmLI5YDeY0w" target="_vukA0N10Ee6RmLI5YDeY0w">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/general"/>
+      </edges>
+      <edges xmi:id="_vukA0t10Ee6RmLI5YDeY0w" source="_vukAzd10Ee6RmLI5YDeY0w" target="_vukAz910Ee6RmLI5YDeY0w">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/specific"/>
+      </edges>
+      <edges xmi:id="_vukA0910Ee6RmLI5YDeY0w" source="_vukAz910Ee6RmLI5YDeY0w" target="_vukAzd10Ee6RmLI5YDeY0w">
+        <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/generalization"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_vukA1910Ee6RmLI5YDeY0w" origin="_vukAxt10Ee6RmLI5YDeY0w" image="_vukAz910Ee6RmLI5YDeY0w"/>
+    <mappings xmi:id="_vukA2N10Ee6RmLI5YDeY0w" origin="_vukAx910Ee6RmLI5YDeY0w" image="_vukA0N10Ee6RmLI5YDeY0w"/>
+  </units>
+</henshin:Module>

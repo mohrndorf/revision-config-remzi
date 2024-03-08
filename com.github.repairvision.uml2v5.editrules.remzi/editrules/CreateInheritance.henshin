@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="ASCII"?>
-<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_vuiLgN10Ee6RmLI5YDeY0w" name="Create: Inheritance" description="Create: Inheritance">
-  <units xsi:type="henshin:SequentialUnit" xmi:id="_vuiLgd10Ee6RmLI5YDeY0w" name="Create: Inheritance" subUnits="_vuiLht10Ee6RmLI5YDeY0w">
-    <parameters xmi:id="_vuiLgt10Ee6RmLI5YDeY0w" name="toA" kind="IN"/>
-    <parameters xmi:id="_vuiLg910Ee6RmLI5YDeY0w" name="toB" kind="IN"/>
-    <parameterMappings xmi:id="_vuiLhN10Ee6RmLI5YDeY0w" source="_vuiLgt10Ee6RmLI5YDeY0w" target="_vuiLh910Ee6RmLI5YDeY0w"/>
-    <parameterMappings xmi:id="_vuiLhd10Ee6RmLI5YDeY0w" source="_vuiLg910Ee6RmLI5YDeY0w" target="_vuiLiN10Ee6RmLI5YDeY0w"/>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_uubM0N2JEe6RmLI5YDeY0w" name="Create: Inheritance" description="Create: Inheritance">
+  <units xsi:type="henshin:SequentialUnit" xmi:id="_uubM0d2JEe6RmLI5YDeY0w" name="Create: Inheritance" subUnits="_uubM1t2JEe6RmLI5YDeY0w">
+    <parameters xmi:id="_uubM0t2JEe6RmLI5YDeY0w" name="toA" kind="IN"/>
+    <parameters xmi:id="_uubM092JEe6RmLI5YDeY0w" name="toB" kind="IN"/>
+    <parameterMappings xmi:id="_uubM1N2JEe6RmLI5YDeY0w" source="_uubM0t2JEe6RmLI5YDeY0w" target="_uubM192JEe6RmLI5YDeY0w"/>
+    <parameterMappings xmi:id="_uubM1d2JEe6RmLI5YDeY0w" source="_uubM092JEe6RmLI5YDeY0w" target="_uubM2N2JEe6RmLI5YDeY0w"/>
   </units>
-  <units xsi:type="henshin:Rule" xmi:id="_vuiLht10Ee6RmLI5YDeY0w" name="Create: Inheritance">
-    <parameters xmi:id="_vuiLh910Ee6RmLI5YDeY0w" name="toA" kind="IN"/>
-    <parameters xmi:id="_vuiLiN10Ee6RmLI5YDeY0w" name="toB" kind="IN"/>
-    <lhs xmi:id="_vuiLid10Ee6RmLI5YDeY0w" name="Lhs">
-      <nodes xmi:id="_vuiLit10Ee6RmLI5YDeY0w" name="toA">
+  <units xsi:type="henshin:Rule" xmi:id="_uubM1t2JEe6RmLI5YDeY0w" name="Create: Inheritance">
+    <parameters xmi:id="_uubM192JEe6RmLI5YDeY0w" name="toA" kind="IN"/>
+    <parameters xmi:id="_uubM2N2JEe6RmLI5YDeY0w" name="toB" kind="IN"/>
+    <lhs xmi:id="_uubM2d2JEe6RmLI5YDeY0w" name="Lhs">
+      <nodes xmi:id="_uubM2t2JEe6RmLI5YDeY0w" name="toA">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
       </nodes>
-      <nodes xmi:id="_vuiLi910Ee6RmLI5YDeY0w" name="toB">
+      <nodes xmi:id="_uubM292JEe6RmLI5YDeY0w" name="toB">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
       </nodes>
     </lhs>
-    <rhs xmi:id="_vuiLjN10Ee6RmLI5YDeY0w" name="Rhs">
-      <nodes xmi:id="_vuiLjd10Ee6RmLI5YDeY0w" name="toA" incoming="_vuiLkt10Ee6RmLI5YDeY0w" outgoing="_vuiLkN10Ee6RmLI5YDeY0w">
+    <rhs xmi:id="_uubM3N2JEe6RmLI5YDeY0w" name="Rhs">
+      <nodes xmi:id="_uubM3d2JEe6RmLI5YDeY0w" name="toA" incoming="_uubM4t2JEe6RmLI5YDeY0w" outgoing="_uubM4N2JEe6RmLI5YDeY0w">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
       </nodes>
-      <nodes xmi:id="_vuiLjt10Ee6RmLI5YDeY0w" name="newGeneralization" incoming="_vuiLkN10Ee6RmLI5YDeY0w" outgoing="_vuiLkd10Ee6RmLI5YDeY0w _vuiLkt10Ee6RmLI5YDeY0w">
+      <nodes xmi:id="_uubM3t2JEe6RmLI5YDeY0w" name="newGeneralization" incoming="_uubM4N2JEe6RmLI5YDeY0w" outgoing="_uubM4d2JEe6RmLI5YDeY0w _uubM4t2JEe6RmLI5YDeY0w">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization"/>
       </nodes>
-      <nodes xmi:id="_vuiLj910Ee6RmLI5YDeY0w" name="toB" incoming="_vuiLkd10Ee6RmLI5YDeY0w">
+      <nodes xmi:id="_uubM392JEe6RmLI5YDeY0w" name="toB" incoming="_uubM4d2JEe6RmLI5YDeY0w">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
       </nodes>
-      <edges xmi:id="_vuiLkN10Ee6RmLI5YDeY0w" source="_vuiLjd10Ee6RmLI5YDeY0w" target="_vuiLjt10Ee6RmLI5YDeY0w">
+      <edges xmi:id="_uubM4N2JEe6RmLI5YDeY0w" source="_uubM3d2JEe6RmLI5YDeY0w" target="_uubM3t2JEe6RmLI5YDeY0w">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/generalization"/>
       </edges>
-      <edges xmi:id="_vuiLkd10Ee6RmLI5YDeY0w" source="_vuiLjt10Ee6RmLI5YDeY0w" target="_vuiLj910Ee6RmLI5YDeY0w">
+      <edges xmi:id="_uubM4d2JEe6RmLI5YDeY0w" source="_uubM3t2JEe6RmLI5YDeY0w" target="_uubM392JEe6RmLI5YDeY0w">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/general"/>
       </edges>
-      <edges xmi:id="_vuiLkt10Ee6RmLI5YDeY0w" source="_vuiLjt10Ee6RmLI5YDeY0w" target="_vuiLjd10Ee6RmLI5YDeY0w">
+      <edges xmi:id="_uubM4t2JEe6RmLI5YDeY0w" source="_uubM3t2JEe6RmLI5YDeY0w" target="_uubM3d2JEe6RmLI5YDeY0w">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/specific"/>
       </edges>
     </rhs>
-    <mappings xmi:id="_vuiLk910Ee6RmLI5YDeY0w" origin="_vuiLit10Ee6RmLI5YDeY0w" image="_vuiLjd10Ee6RmLI5YDeY0w"/>
-    <mappings xmi:id="_vuiLlN10Ee6RmLI5YDeY0w" origin="_vuiLi910Ee6RmLI5YDeY0w" image="_vuiLj910Ee6RmLI5YDeY0w"/>
+    <mappings xmi:id="_uubM492JEe6RmLI5YDeY0w" origin="_uubM2t2JEe6RmLI5YDeY0w" image="_uubM3d2JEe6RmLI5YDeY0w"/>
+    <mappings xmi:id="_uubM5N2JEe6RmLI5YDeY0w" origin="_uubM292JEe6RmLI5YDeY0w" image="_uubM392JEe6RmLI5YDeY0w"/>
   </units>
 </henshin:Module>

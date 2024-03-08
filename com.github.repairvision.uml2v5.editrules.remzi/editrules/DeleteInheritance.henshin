@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="ASCII"?>
-<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_vujZoN10Ee6RmLI5YDeY0w" name="Delete: Inheritance" description="Delete: Inheritance">
-  <units xsi:type="henshin:SequentialUnit" xmi:id="_vujZod10Ee6RmLI5YDeY0w" name="Delete: Inheritance" subUnits="_vujZqN10Ee6RmLI5YDeY0w">
-    <parameters xmi:id="_vujZot10Ee6RmLI5YDeY0w" name="fromA" kind="IN"/>
-    <parameters xmi:id="_vujZo910Ee6RmLI5YDeY0w" name="oldGeneralization" kind="IN"/>
-    <parameters xmi:id="_vujZpN10Ee6RmLI5YDeY0w" name="fromB" kind="IN"/>
-    <parameterMappings xmi:id="_vujZpd10Ee6RmLI5YDeY0w" source="_vujZot10Ee6RmLI5YDeY0w" target="_vujZqd10Ee6RmLI5YDeY0w"/>
-    <parameterMappings xmi:id="_vujZpt10Ee6RmLI5YDeY0w" source="_vujZo910Ee6RmLI5YDeY0w" target="_vujZqt10Ee6RmLI5YDeY0w"/>
-    <parameterMappings xmi:id="_vujZp910Ee6RmLI5YDeY0w" source="_vujZpN10Ee6RmLI5YDeY0w" target="_vujZq910Ee6RmLI5YDeY0w"/>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_uudCAN2JEe6RmLI5YDeY0w" name="Delete: Inheritance" description="Delete: Inheritance">
+  <units xsi:type="henshin:SequentialUnit" xmi:id="_uudCAd2JEe6RmLI5YDeY0w" name="Delete: Inheritance" subUnits="_uudCCN2JEe6RmLI5YDeY0w">
+    <parameters xmi:id="_uudCAt2JEe6RmLI5YDeY0w" name="fromA" kind="IN"/>
+    <parameters xmi:id="_uudCA92JEe6RmLI5YDeY0w" name="oldGeneralization" kind="IN"/>
+    <parameters xmi:id="_uudCBN2JEe6RmLI5YDeY0w" name="fromB" kind="IN"/>
+    <parameterMappings xmi:id="_uudCBd2JEe6RmLI5YDeY0w" source="_uudCAt2JEe6RmLI5YDeY0w" target="_uudCCd2JEe6RmLI5YDeY0w"/>
+    <parameterMappings xmi:id="_uudCBt2JEe6RmLI5YDeY0w" source="_uudCA92JEe6RmLI5YDeY0w" target="_uudCCt2JEe6RmLI5YDeY0w"/>
+    <parameterMappings xmi:id="_uudCB92JEe6RmLI5YDeY0w" source="_uudCBN2JEe6RmLI5YDeY0w" target="_uudCC92JEe6RmLI5YDeY0w"/>
   </units>
-  <units xsi:type="henshin:Rule" xmi:id="_vujZqN10Ee6RmLI5YDeY0w" name="Delete: Inheritance">
-    <parameters xmi:id="_vujZqd10Ee6RmLI5YDeY0w" name="fromA" kind="IN"/>
-    <parameters xmi:id="_vujZqt10Ee6RmLI5YDeY0w" name="oldGeneralization" kind="IN"/>
-    <parameters xmi:id="_vujZq910Ee6RmLI5YDeY0w" name="fromB" kind="IN"/>
-    <lhs xmi:id="_vujZrN10Ee6RmLI5YDeY0w" name="Lhs">
-      <nodes xmi:id="_vujZrd10Ee6RmLI5YDeY0w" name="fromA" incoming="_vujZst10Ee6RmLI5YDeY0w" outgoing="_vujZsN10Ee6RmLI5YDeY0w">
+  <units xsi:type="henshin:Rule" xmi:id="_uudCCN2JEe6RmLI5YDeY0w" name="Delete: Inheritance">
+    <parameters xmi:id="_uudCCd2JEe6RmLI5YDeY0w" name="fromA" kind="IN"/>
+    <parameters xmi:id="_uudCCt2JEe6RmLI5YDeY0w" name="oldGeneralization" kind="IN"/>
+    <parameters xmi:id="_uudCC92JEe6RmLI5YDeY0w" name="fromB" kind="IN"/>
+    <lhs xmi:id="_uudCDN2JEe6RmLI5YDeY0w" name="Lhs">
+      <nodes xmi:id="_uudCDd2JEe6RmLI5YDeY0w" name="fromA" incoming="_uudCEt2JEe6RmLI5YDeY0w" outgoing="_uudCEN2JEe6RmLI5YDeY0w">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
       </nodes>
-      <nodes xmi:id="_vujZrt10Ee6RmLI5YDeY0w" name="oldGeneralization" incoming="_vujZsN10Ee6RmLI5YDeY0w" outgoing="_vujZsd10Ee6RmLI5YDeY0w _vujZst10Ee6RmLI5YDeY0w">
+      <nodes xmi:id="_uudCDt2JEe6RmLI5YDeY0w" name="oldGeneralization" incoming="_uudCEN2JEe6RmLI5YDeY0w" outgoing="_uudCEd2JEe6RmLI5YDeY0w _uudCEt2JEe6RmLI5YDeY0w">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization"/>
       </nodes>
-      <nodes xmi:id="_vujZr910Ee6RmLI5YDeY0w" name="fromB" incoming="_vujZsd10Ee6RmLI5YDeY0w">
+      <nodes xmi:id="_uudCD92JEe6RmLI5YDeY0w" name="fromB" incoming="_uudCEd2JEe6RmLI5YDeY0w">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
       </nodes>
-      <edges xmi:id="_vujZsN10Ee6RmLI5YDeY0w" source="_vujZrd10Ee6RmLI5YDeY0w" target="_vujZrt10Ee6RmLI5YDeY0w">
+      <edges xmi:id="_uudCEN2JEe6RmLI5YDeY0w" source="_uudCDd2JEe6RmLI5YDeY0w" target="_uudCDt2JEe6RmLI5YDeY0w">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier/generalization"/>
       </edges>
-      <edges xmi:id="_vujZsd10Ee6RmLI5YDeY0w" source="_vujZrt10Ee6RmLI5YDeY0w" target="_vujZr910Ee6RmLI5YDeY0w">
+      <edges xmi:id="_uudCEd2JEe6RmLI5YDeY0w" source="_uudCDt2JEe6RmLI5YDeY0w" target="_uudCD92JEe6RmLI5YDeY0w">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/general"/>
       </edges>
-      <edges xmi:id="_vujZst10Ee6RmLI5YDeY0w" source="_vujZrt10Ee6RmLI5YDeY0w" target="_vujZrd10Ee6RmLI5YDeY0w">
+      <edges xmi:id="_uudCEt2JEe6RmLI5YDeY0w" source="_uudCDt2JEe6RmLI5YDeY0w" target="_uudCDd2JEe6RmLI5YDeY0w">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization/specific"/>
       </edges>
     </lhs>
-    <rhs xmi:id="_vujZs910Ee6RmLI5YDeY0w" name="Rhs">
-      <nodes xmi:id="_vujZtN10Ee6RmLI5YDeY0w" name="fromA">
+    <rhs xmi:id="_uudCE92JEe6RmLI5YDeY0w" name="Rhs">
+      <nodes xmi:id="_uudCFN2JEe6RmLI5YDeY0w" name="fromA">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
       </nodes>
-      <nodes xmi:id="_vujZtd10Ee6RmLI5YDeY0w" name="fromB">
+      <nodes xmi:id="_uudCFd2JEe6RmLI5YDeY0w" name="fromB">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
       </nodes>
     </rhs>
-    <mappings xmi:id="_vujZtt10Ee6RmLI5YDeY0w" origin="_vujZrd10Ee6RmLI5YDeY0w" image="_vujZtN10Ee6RmLI5YDeY0w"/>
-    <mappings xmi:id="_vujZt910Ee6RmLI5YDeY0w" origin="_vujZr910Ee6RmLI5YDeY0w" image="_vujZtd10Ee6RmLI5YDeY0w"/>
+    <mappings xmi:id="_uudCFt2JEe6RmLI5YDeY0w" origin="_uudCDd2JEe6RmLI5YDeY0w" image="_uudCFN2JEe6RmLI5YDeY0w"/>
+    <mappings xmi:id="_uudCF92JEe6RmLI5YDeY0w" origin="_uudCD92JEe6RmLI5YDeY0w" image="_uudCFd2JEe6RmLI5YDeY0w"/>
   </units>
 </henshin:Module>

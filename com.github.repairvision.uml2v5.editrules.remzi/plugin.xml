@@ -5,9 +5,17 @@
    <extension
          point="org.sidiff.revision.editrules.project.rulebase">
       <rulebase
-            name="com.github.repairvision.uml2v5.editrules.remzi"
+            name="UML 2.5 Edit Rules (generated) (Remzi)"
             document-type="http://www.eclipse.org/uml2/5.0.0/UML"
             folder="editrules">
+      </rulebase>
+   </extension>
+   <extension
+         point="org.sidiff.revision.editrules.project.rulebase">
+      <rulebase
+            document-type="http://www.eclipse.org/uml2/5.0.0/UML"
+            folder="editrules-manually"
+            name="UML 2.5 Edit Rules (manually) (Remzi)">
       </rulebase>
    </extension>
 
