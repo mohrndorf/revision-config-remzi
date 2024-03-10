@@ -1,0 +1,2 @@
+Constraint: MissingAssociation
+- Added annotation <<exists>> to Classes contained in the Package and their ownedElement References.
