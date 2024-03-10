@@ -36,12 +36,23 @@ context Class self :
 	forAll(Property at in self.ownedAttribute :
 		isInstanceOf(at.type, Class)
 		implies
-		exists(Package model in getContainer(self) : 				// Association.allInstances()
-			exists(Association association in model.ownedElement : 	// |
-				isInstanceOf(association, Association) 				// |
-				and
-				exists(Property end in association.memberEnd :
-					isEqual(end.type, at.type))
-				and
-				exists(Property end in association.memberEnd :
-					isEqual(end.type, self)))))
+		exists(Association association in at.association :
+			exists(Property end in association.memberEnd :
+				isEqual(end.type, self))))
+				
+// Check with "Association.allInstances()":
+//constraint MissingAssociation
+//message "An attribute with a class type must be represented by an association."
+//context Class self :
+//	forAll(Property at in self.ownedAttribute :
+//		isInstanceOf(at.type, Class)
+//		implies
+//		exists(Package model in getContainer(self) : 				// Association.allInstances()
+//			exists(Association association in model.ownedElement : 	// |
+//				isInstanceOf(association, Association) 				// |
+//				and
+//				exists(Property end in association.memberEnd :
+//					isEqual(end.type, at.type))
+//				and
+//				exists(Property end in association.memberEnd :
+//					isEqual(end.type, self)))))
