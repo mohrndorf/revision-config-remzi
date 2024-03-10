@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:graphpattern="http://www.sidiff.org/graphpattern/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis uid="_nsVIIN7_Ee6RmLI5YDeY0w" selectedViews="_nsuJsN7_Ee6RmLI5YDeY0w" version="15.0.0.202201261500">
+    <semanticResources>patterns.graphpattern</semanticResources>
     <semanticResources>graphpatternprofile:/org.sidiff.graphpattern.profile.constraints</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_nsuJsN7_Ee6RmLI5YDeY0w">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.sidiff.graphpattern.design/description/graphpattern.odesign#//@ownedViewpoints[name='graphpattern']"/>
