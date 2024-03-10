@@ -10,6 +10,8 @@ DEFINE : Attribute : b : Property : name : attributeNameB
 # FILTER : Node : <node name> : <node type>
 
 # FILTER : Attribute : <node name> : <node type> : <attribute type>
+# Note: We could differentiate between none, composite, and shared aggregations to make the edit rules more precise.
+# FILTER : Attribute : .* : .* : (?!aggregation).*
 FILTER : Attribute : .* : .* : .*
 
 # FILTER : Edge : <source node name> : <source node type> : <edge type> : <target node name> : <target node type>

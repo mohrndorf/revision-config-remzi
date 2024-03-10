@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="ASCII"?>
-<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_45A2wN8kEe6WX6aYMZvvNA" name="Create: EnumerationAttributeInClass" description="Create: EnumerationAttributeInClass">
-  <units xsi:type="henshin:SequentialUnit" xmi:id="_45A2wd8kEe6WX6aYMZvvNA" name="Create: EnumerationAttributeInClass" subUnits="_45A2yN8kEe6WX6aYMZvvNA">
-    <parameters xmi:id="_45A2wt8kEe6WX6aYMZvvNA" name="toA" kind="IN"/>
-    <parameters xmi:id="_45A2w98kEe6WX6aYMZvvNA" name="attributeName" kind="IN"/>
-    <parameters xmi:id="_45A2xN8kEe6WX6aYMZvvNA" name="toE" kind="IN"/>
-    <parameterMappings xmi:id="_45A2xd8kEe6WX6aYMZvvNA" source="_45A2wt8kEe6WX6aYMZvvNA" target="_45A2yd8kEe6WX6aYMZvvNA"/>
-    <parameterMappings xmi:id="_45A2xt8kEe6WX6aYMZvvNA" source="_45A2w98kEe6WX6aYMZvvNA" target="_45A2yt8kEe6WX6aYMZvvNA"/>
-    <parameterMappings xmi:id="_45A2x98kEe6WX6aYMZvvNA" source="_45A2xN8kEe6WX6aYMZvvNA" target="_45A2y98kEe6WX6aYMZvvNA"/>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_LMgwrN8yEe6bL6Gb_coG5g" name="Create: EnumerationAttributeInClass" description="Create: EnumerationAttributeInClass">
+  <units xsi:type="henshin:SequentialUnit" xmi:id="_LMgwrd8yEe6bL6Gb_coG5g" name="Create: EnumerationAttributeInClass" subUnits="_LMgwtN8yEe6bL6Gb_coG5g">
+    <parameters xmi:id="_LMgwrt8yEe6bL6Gb_coG5g" name="toA" kind="IN"/>
+    <parameters xmi:id="_LMgwr98yEe6bL6Gb_coG5g" name="attributeName" kind="IN"/>
+    <parameters xmi:id="_LMgwsN8yEe6bL6Gb_coG5g" name="toE" kind="IN"/>
+    <parameterMappings xmi:id="_LMgwsd8yEe6bL6Gb_coG5g" source="_LMgwrt8yEe6bL6Gb_coG5g" target="_LMgwtd8yEe6bL6Gb_coG5g"/>
+    <parameterMappings xmi:id="_LMgwst8yEe6bL6Gb_coG5g" source="_LMgwr98yEe6bL6Gb_coG5g" target="_LMgwtt8yEe6bL6Gb_coG5g"/>
+    <parameterMappings xmi:id="_LMgws98yEe6bL6Gb_coG5g" source="_LMgwsN8yEe6bL6Gb_coG5g" target="_LMgwt98yEe6bL6Gb_coG5g"/>
   </units>
-  <units xsi:type="henshin:Rule" xmi:id="_45A2yN8kEe6WX6aYMZvvNA" name="Create: EnumerationAttributeInClass">
-    <parameters xmi:id="_45A2yd8kEe6WX6aYMZvvNA" name="toA" kind="IN"/>
-    <parameters xmi:id="_45A2yt8kEe6WX6aYMZvvNA" name="attributeName" kind="IN"/>
-    <parameters xmi:id="_45A2y98kEe6WX6aYMZvvNA" name="toE" kind="IN"/>
-    <lhs xmi:id="_45A2zN8kEe6WX6aYMZvvNA" name="Lhs">
-      <nodes xmi:id="_45A2zd8kEe6WX6aYMZvvNA" name="toA">
+  <units xsi:type="henshin:Rule" xmi:id="_LMgwtN8yEe6bL6Gb_coG5g" name="Create: EnumerationAttributeInClass">
+    <parameters xmi:id="_LMgwtd8yEe6bL6Gb_coG5g" name="toA" kind="IN"/>
+    <parameters xmi:id="_LMgwtt8yEe6bL6Gb_coG5g" name="attributeName" kind="IN"/>
+    <parameters xmi:id="_LMgwt98yEe6bL6Gb_coG5g" name="toE" kind="IN"/>
+    <lhs xmi:id="_LMgwuN8yEe6bL6Gb_coG5g" name="Lhs">
+      <nodes xmi:id="_LMgwud8yEe6bL6Gb_coG5g" name="toA">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
       </nodes>
-      <nodes xmi:id="_45A2zt8kEe6WX6aYMZvvNA" name="toE">
+      <nodes xmi:id="_LMgwut8yEe6bL6Gb_coG5g" name="toE">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Enumeration"/>
       </nodes>
     </lhs>
-    <rhs xmi:id="_45A2z98kEe6WX6aYMZvvNA" name="Rhs">
-      <nodes xmi:id="_45A20N8kEe6WX6aYMZvvNA" name="toA" incoming="_45A21t8kEe6WX6aYMZvvNA" outgoing="_45A21N8kEe6WX6aYMZvvNA">
+    <rhs xmi:id="_LMgwu98yEe6bL6Gb_coG5g" name="Rhs">
+      <nodes xmi:id="_LMgwvN8yEe6bL6Gb_coG5g" name="toA" incoming="_LMgwwt8yEe6bL6Gb_coG5g" outgoing="_LMgwwN8yEe6bL6Gb_coG5g">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
       </nodes>
-      <nodes xmi:id="_45A20d8kEe6WX6aYMZvvNA" name="newAttribute" incoming="_45A21N8kEe6WX6aYMZvvNA" outgoing="_45A21d8kEe6WX6aYMZvvNA _45A21t8kEe6WX6aYMZvvNA">
+      <nodes xmi:id="_LMgwvd8yEe6bL6Gb_coG5g" name="newAttribute" incoming="_LMgwwN8yEe6bL6Gb_coG5g" outgoing="_LMgwwd8yEe6bL6Gb_coG5g _LMgwwt8yEe6bL6Gb_coG5g">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
-        <attributes xmi:id="_45A20t8kEe6WX6aYMZvvNA" value="attributeName">
+        <attributes xmi:id="_LMgwvt8yEe6bL6Gb_coG5g" value="attributeName">
           <type href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
         </attributes>
       </nodes>
-      <nodes xmi:id="_45A2098kEe6WX6aYMZvvNA" name="toE" incoming="_45A21d8kEe6WX6aYMZvvNA">
+      <nodes xmi:id="_LMgwv98yEe6bL6Gb_coG5g" name="toE" incoming="_LMgwwd8yEe6bL6Gb_coG5g">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Enumeration"/>
       </nodes>
-      <edges xmi:id="_45A21N8kEe6WX6aYMZvvNA" source="_45A20N8kEe6WX6aYMZvvNA" target="_45A20d8kEe6WX6aYMZvvNA">
+      <edges xmi:id="_LMgwwN8yEe6bL6Gb_coG5g" source="_LMgwvN8yEe6bL6Gb_coG5g" target="_LMgwvd8yEe6bL6Gb_coG5g">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
       </edges>
-      <edges xmi:id="_45A21d8kEe6WX6aYMZvvNA" source="_45A20d8kEe6WX6aYMZvvNA" target="_45A2098kEe6WX6aYMZvvNA">
+      <edges xmi:id="_LMgwwd8yEe6bL6Gb_coG5g" source="_LMgwvd8yEe6bL6Gb_coG5g" target="_LMgwv98yEe6bL6Gb_coG5g">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
       </edges>
-      <edges xmi:id="_45A21t8kEe6WX6aYMZvvNA" source="_45A20d8kEe6WX6aYMZvvNA" target="_45A20N8kEe6WX6aYMZvvNA">
+      <edges xmi:id="_LMgwwt8yEe6bL6Gb_coG5g" source="_LMgwvd8yEe6bL6Gb_coG5g" target="_LMgwvN8yEe6bL6Gb_coG5g">
         <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
       </edges>
     </rhs>
-    <mappings xmi:id="_45A2198kEe6WX6aYMZvvNA" origin="_45A2zd8kEe6WX6aYMZvvNA" image="_45A20N8kEe6WX6aYMZvvNA"/>
-    <mappings xmi:id="_45A22N8kEe6WX6aYMZvvNA" origin="_45A2zt8kEe6WX6aYMZvvNA" image="_45A2098kEe6WX6aYMZvvNA"/>
+    <mappings xmi:id="_LMgww98yEe6bL6Gb_coG5g" origin="_LMgwud8yEe6bL6Gb_coG5g" image="_LMgwvN8yEe6bL6Gb_coG5g"/>
+    <mappings xmi:id="_LMgwxN8yEe6bL6Gb_coG5g" origin="_LMgwut8yEe6bL6Gb_coG5g" image="_LMgwv98yEe6bL6Gb_coG5g"/>
   </units>
 </henshin:Module>

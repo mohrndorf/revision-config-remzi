@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ASCII"?>
+<difference:Difference xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:difference="http://www.sidiff.org/revision/difference/1.0" uriModelA="platform:/resource/com.github.repairvision.uml2v5.editrules.remzi/scenarios/MissingComposite/ModelVersionA/MissingAssociation.uml" uriModelB="platform:/resource/com.github.repairvision.uml2v5.editrules.remzi/scenarios/MissingComposite/ModelVersionB/MissingAssociation.uml">
+  <changes xsi:type="difference:AddReference">
+    <src href="../ModelVersionB/MissingAssociation.uml#_xWDqUN1xEe6lQ8qhkG68yw"/>
+    <tgt href="../ModelVersionB/MissingAssociation.uml#__Ym_EN1xEe6lQ8qhkG68yw"/>
+    <type href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier/ownedAttribute"/>
+  </changes>
+  <changes xsi:type="difference:AddObject">
+    <obj href="../ModelVersionB/MissingAssociation.uml#__Ym_EN1xEe6lQ8qhkG68yw"/>
+  </changes>
+  <changes xsi:type="difference:AddReference">
+    <src href="../ModelVersionB/MissingAssociation.uml#__Ym_EN1xEe6lQ8qhkG68yw"/>
+    <tgt href="../ModelVersionB/MissingAssociation.uml#_x5hjwN1xEe6lQ8qhkG68yw"/>
+    <type href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+  </changes>
+  <changes xsi:type="difference:AddReference">
+    <src href="../ModelVersionB/MissingAssociation.uml#__Ym_EN1xEe6lQ8qhkG68yw"/>
+    <tgt href="../ModelVersionB/MissingAssociation.uml#_xWDqUN1xEe6lQ8qhkG68yw"/>
+    <type href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/class"/>
+  </changes>
+  <correspondences>
+    <matchedA href="MissingAssociation.uml#_uFeDUN1xEe6lQ8qhkG68yw"/>
+    <matchedB href="../ModelVersionB/MissingAssociation.uml#_uFeDUN1xEe6lQ8qhkG68yw"/>
+  </correspondences>
+  <correspondences>
+    <matchedA href="MissingAssociation.uml#_xWDqUN1xEe6lQ8qhkG68yw"/>
+    <matchedB href="../ModelVersionB/MissingAssociation.uml#_xWDqUN1xEe6lQ8qhkG68yw"/>
+  </correspondences>
+  <correspondences>
+    <matchedA href="MissingAssociation.uml#_x5hjwN1xEe6lQ8qhkG68yw"/>
+    <matchedB href="../ModelVersionB/MissingAssociation.uml#_x5hjwN1xEe6lQ8qhkG68yw"/>
+  </correspondences>
+</difference:Difference>
