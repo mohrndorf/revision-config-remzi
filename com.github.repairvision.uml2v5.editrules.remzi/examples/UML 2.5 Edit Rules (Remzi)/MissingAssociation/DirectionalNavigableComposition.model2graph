@@ -1,5 +1,7 @@
 # Transformation Definition: (copy example line, replace patterns <...> with regular expression, remove #)
 # DEFINE : Parameter : <parameter name>
+# DEFINE : Parameter : associationName
+
 # DEFINE : Attribute : <node name> : <node type> : <attribute name> : <attribte value>
 DEFINE : Attribute : association : Association : name : associationName
 DEFINE : Attribute : a : Property : name : attributeNameA
@@ -10,6 +12,6 @@ DEFINE : Attribute : b : Property : name : attributeNameB
 # FILTER : Node : <node name> : <node type>
 
 # FILTER : Attribute : <node name> : <node type> : <attribute type>
-FILTER : Attribute : .* : .* : .*
+FILTER : Attribute : .* : .* : (?!aggregation).*
 
 # FILTER : Edge : <source node name> : <source node type> : <edge type> : <target node name> : <target node type>

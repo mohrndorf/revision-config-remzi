@@ -8,7 +8,6 @@ DEFINE : Attribute : b : Property : name : attributeNameB
 # DEFINE : Node : <node name> : <node type> : <node name replacement>
 
 # FILTER : Node : <node name> : <node type>
-FILTER : Node : Example : Model
 
 # FILTER : Attribute : <node name> : <node type> : <attribute type>
 FILTER : Attribute : .* : .* : .*

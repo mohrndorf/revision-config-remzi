@@ -10,7 +10,7 @@
         <styles xmi:type="notation:DescriptionStyle" xmi:id="_m8vjwd2KEe6RmLI5YDeY0w"/>
         <styles xmi:type="notation:FontStyle" xmi:id="_m8vjwt2KEe6RmLI5YDeY0w" fontName="Segoe UI"/>
         <element xmi:type="henshin:SequentialUnit" href="ReplaceWithInvertedInheritance.henshin#_vukAsd10Ee6RmLI5YDeY0w"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_m8vjxt2KEe6RmLI5YDeY0w" x="190" y="30"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_m8vjxt2KEe6RmLI5YDeY0w" x="127" y="29"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_m8vjx92KEe6RmLI5YDeY0w" type="3004">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m8vjy92KEe6RmLI5YDeY0w" source="symbol">
@@ -19,7 +19,7 @@
         <styles xmi:type="notation:DescriptionStyle" xmi:id="_m8vjyN2KEe6RmLI5YDeY0w"/>
         <styles xmi:type="notation:FontStyle" xmi:id="_m8vjyd2KEe6RmLI5YDeY0w" fontName="Segoe UI"/>
         <element xmi:type="henshin:SequentialUnit" href="ReplaceWithInvertedInheritance.henshin#_vukAsd10Ee6RmLI5YDeY0w"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_m8vjzd2KEe6RmLI5YDeY0w" x="190" y="197"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_m8vjzd2KEe6RmLI5YDeY0w" x="127" y="193"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_m8zOIN2KEe6RmLI5YDeY0w" type="3003" fontName="Segoe UI" italic="true" lineColor="0">
         <children xmi:type="notation:DecorationNode" xmi:id="_m8z1MN2KEe6RmLI5YDeY0w" type="5005"/>
