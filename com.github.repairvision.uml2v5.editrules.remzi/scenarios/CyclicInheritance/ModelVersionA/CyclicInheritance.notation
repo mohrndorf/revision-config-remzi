@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_KOupgN1xEe6lQ8qhkG68yw" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_KOupgN1xEe6lQ8qhkG68yw" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LHTvAN8sEe6cCdFdwcV_iw" source="PapyrusCSSForceValue">
+    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LHTvAd8sEe6cCdFdwcV_iw" key="canonical" value="true"/>
+  </eAnnotations>
   <children xmi:type="notation:Shape" xmi:id="_S_U8cN1xEe6lQ8qhkG68yw" type="Class_Shape">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NK7zod8sEe6cCdFdwcV_iw" source="PapyrusCSSForceValue">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NK7zot8sEe6cCdFdwcV_iw" key="canonical" value="true"/>
+    </eAnnotations>
     <children xmi:type="notation:DecorationNode" xmi:id="_S_X_wN1xEe6lQ8qhkG68yw" type="Class_NameLabel"/>
     <children xmi:type="notation:DecorationNode" xmi:id="_S_X_wd1xEe6lQ8qhkG68yw" type="Class_FloatingNameLabel">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_S_X_wt1xEe6lQ8qhkG68yw" y="15"/>
@@ -23,10 +29,14 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_S_ZN7d1xEe6lQ8qhkG68yw"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S_ZN7t1xEe6lQ8qhkG68yw"/>
     </children>
+    <styles xmi:type="notation:CanonicalStyle" xmi:id="_NK7zoN8sEe6cCdFdwcV_iw"/>
     <element xmi:type="uml:Class" href="CyclicInheritance.uml#_S_Pc4N1xEe6lQ8qhkG68yw"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S_U8cd1xEe6lQ8qhkG68yw" x="200" y="120"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_Tse9YN1xEe6lQ8qhkG68yw" type="Class_Shape">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_P2ASwd8sEe6cCdFdwcV_iw" source="PapyrusCSSForceValue">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_P2ASwt8sEe6cCdFdwcV_iw" key="canonical" value="true"/>
+    </eAnnotations>
     <children xmi:type="notation:DecorationNode" xmi:id="_TsfkcN1xEe6lQ8qhkG68yw" type="Class_NameLabel"/>
     <children xmi:type="notation:DecorationNode" xmi:id="_Tsfkcd1xEe6lQ8qhkG68yw" type="Class_FloatingNameLabel">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_Tsfkct1xEe6lQ8qhkG68yw" y="15"/>
@@ -49,6 +59,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_TsfkgN1xEe6lQ8qhkG68yw"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Tsfkgd1xEe6lQ8qhkG68yw"/>
     </children>
+    <styles xmi:type="notation:CanonicalStyle" xmi:id="_P2ASwN8sEe6cCdFdwcV_iw"/>
     <element xmi:type="uml:Class" href="CyclicInheritance.uml#_TsdIMN1xEe6lQ8qhkG68yw"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Tse9Yd1xEe6lQ8qhkG68yw" x="460" y="120"/>
   </children>
@@ -57,6 +68,7 @@
   <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_KOupg91xEe6lQ8qhkG68yw" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
     <owner xmi:type="uml:Model" href="CyclicInheritance.uml#_KMUOsN1xEe6lQ8qhkG68yw"/>
   </styles>
+  <styles xmi:type="notation:CanonicalStyle" xmi:id="_LHSg4N8sEe6cCdFdwcV_iw"/>
   <element xmi:type="uml:Model" href="CyclicInheritance.uml#_KMUOsN1xEe6lQ8qhkG68yw"/>
   <edges xmi:type="notation:Connector" xmi:id="_ViFNEN1xEe6lQ8qhkG68yw" type="Generalization_Edge" source="_S_U8cN1xEe6lQ8qhkG68yw" target="_Tse9YN1xEe6lQ8qhkG68yw">
     <children xmi:type="notation:DecorationNode" xmi:id="_ViFNE91xEe6lQ8qhkG68yw" type="Generalization_StereotypeLabel">

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_uFeqYN1xEe6lQ8qhkG68yw" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_uFeqYN1xEe6lQ8qhkG68yw" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dho8Ud8sEe6cCdFdwcV_iw" source="PapyrusCSSForceValue">
+    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dho8Ut8sEe6cCdFdwcV_iw" key="canonical" value="true"/>
+  </eAnnotations>
   <children xmi:type="notation:Shape" xmi:id="_xWERYN1xEe6lQ8qhkG68yw" type="Class_Shape">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eYcogN8sEe6cCdFdwcV_iw" source="PapyrusCSSForceValue">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eYcogd8sEe6cCdFdwcV_iw" key="canonical" value="true"/>
+    </eAnnotations>
     <children xmi:type="notation:DecorationNode" xmi:id="_xWERYt1xEe6lQ8qhkG68yw" type="Class_NameLabel"/>
     <children xmi:type="notation:DecorationNode" xmi:id="_xWERY91xEe6lQ8qhkG68yw" type="Class_FloatingNameLabel">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_xWERZN1xEe6lQ8qhkG68yw" y="15"/>
@@ -27,10 +33,14 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_xWE4fd1xEe6lQ8qhkG68yw"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xWE4ft1xEe6lQ8qhkG68yw"/>
     </children>
+    <styles xmi:type="notation:CanonicalStyle" xmi:id="_eYcBcN8sEe6cCdFdwcV_iw"/>
     <element xmi:type="uml:Class" href="MissingAssociation.uml#_xWDqUN1xEe6lQ8qhkG68yw"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xWERYd1xEe6lQ8qhkG68yw" x="120" y="120"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_x5iK0N1xEe6lQ8qhkG68yw" type="Class_Shape">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eyuJsd8sEe6cCdFdwcV_iw" source="PapyrusCSSForceValue">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eyuwwN8sEe6cCdFdwcV_iw" key="canonical" value="true"/>
+    </eAnnotations>
     <children xmi:type="notation:DecorationNode" xmi:id="_x5iK0t1xEe6lQ8qhkG68yw" type="Class_NameLabel"/>
     <children xmi:type="notation:DecorationNode" xmi:id="_x5iK091xEe6lQ8qhkG68yw" type="Class_FloatingNameLabel">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_x5iK1N1xEe6lQ8qhkG68yw" y="15"/>
@@ -53,6 +63,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_x5ix491xEe6lQ8qhkG68yw"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x5ix5N1xEe6lQ8qhkG68yw"/>
     </children>
+    <styles xmi:type="notation:CanonicalStyle" xmi:id="_eyuJsN8sEe6cCdFdwcV_iw"/>
     <element xmi:type="uml:Class" href="MissingAssociation.uml#_x5hjwN1xEe6lQ8qhkG68yw"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x5iK0d1xEe6lQ8qhkG68yw" x="380" y="120"/>
   </children>
@@ -61,5 +72,6 @@
   <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_uFeqY91xEe6lQ8qhkG68yw" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
     <owner xmi:type="uml:Model" href="MissingAssociation.uml#_uFeDUN1xEe6lQ8qhkG68yw"/>
   </styles>
+  <styles xmi:type="notation:CanonicalStyle" xmi:id="_dho8UN8sEe6cCdFdwcV_iw"/>
   <element xmi:type="uml:Model" href="MissingAssociation.uml#_uFeDUN1xEe6lQ8qhkG68yw"/>
 </notation:Diagram>
