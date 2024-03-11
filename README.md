@@ -23,7 +23,7 @@ In order to show changes in the model (which is modified by `ReVision`) in the c
 Enable the option by selecting the diagram's canvas and for each class.
 
 The scenarios with a version history maintained by Git can be found in `com.github.repairvision.uml2v5.scenarios.remzi`.
-Assuming the plug-ins listed above are installed in Eclipse, you can use `ReVision` as described [here](https://repairvision.github.io/gettingstarted/). 
+Assuming the plug-ins listed above are installed in Eclipse, you can use `ReVision` as described [here](https://repairvision.github.io/gettingstarted/).
 
 ## `ReVision` Developer Mode
 
@@ -51,6 +51,8 @@ A HTML documentation of the generated edit rules can be found in `doc` folder.
 The `Henshin` graph transformation diagrams of the generated edit rules that are relevant to the scenarios can be found in the corresponding scenario folders.
 
 ## Scenario 1: The name of an attribute in a class must be unique.
+
+![Scenario 1](README/scenario01.png "Scenario 1")
 
 The constraint `UniqueAttributeName` compares the names of all attributes in a class.
 
