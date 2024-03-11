@@ -31,7 +31,8 @@ To test `ReVision` with explicitly given model versions and edit rules, one can 
 Therefore, select the `Open Configuration` (cogwheel) icon in the `ReVision` view.
 Under `Complementation -> User Interface` select `Repair Engine (developer)`.
 This view allows you to add and remove edit rules and model versions for evaluation by drag'n'drop those into the corresponding fields.
-Notably, the constraints must be installed to run the evaluation (see [configuration](https://repairvision.github.io/configuration/)).
+Notably, the constraints must be installed to run the evaluation.
+The constraint plug-in can be installed by exporting it to the dropins folder of Eclipse (see above, restart required) or by running an second Eclipse Application from the workspace containing the constraint plug-in (see [configuration](https://repairvision.github.io/configuration/)).
 
 ## Edit Rule Generation
 
