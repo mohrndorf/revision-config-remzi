@@ -94,6 +94,8 @@ The relevant edit rule and their repair recommendations for this scenario are:
 
 ## Scenario 2: Two classes cannot inherit from each other.
 
+![Scenario 2](README/scenario02.png "Scenario 2")
+
 The constraint `CyclicInheritance` states that if a class `A` inherits from a class `B`, class `B` cannot inherit from class `A`.
 
 __FOL:__
@@ -137,6 +139,8 @@ The complementation approach of `ReVision` do not allow to remove newly created 
 Thus, the edit rule `ReplaceWithInvertedInheritance` could not be considered as a repair in this case.
 
 ## Scenario 3: An attribute with a class type must be represented by an association.
+
+![Scenario 3](README/scenario03.png "Scenario 3")
 
 The constraint `MissingAssociation` checks all properties in class `A`. 
 If a property has another class `B` as type (i.e., not a data type such as String or Integer), the property must be represented by an association. 
