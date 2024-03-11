@@ -6,6 +6,7 @@ domain 'http://www.eclipse.org/uml2/5.0.0/UML'
 
 // Easy:
 /*
+ * context Class inv:
  * self.ownedAttribute->forAll(attrA| self.ownedAttribute->forAll(attrB | attrA<>attrB implies (attrA.name<>attrB.name)))
  */
 constraint UniqueAttributeName
@@ -28,7 +29,8 @@ context Class self :
 
 // Hard:
 /*
- * self.attribute->forAll(at | at.type.oclIsKindOf(Class) implies Association.allInstances()->exists(association | association.memberEnd.type->includes(at.type) and association.memberEnd.type->includes(self)))
+ * context Class inv:
+ * self.attribute->forAll(at | at.type.oclIsKindOf(Class) implies at.type.association->exists(association | association.memberEnd.type->includes(at.type) and association.memberEnd.type->includes(self)))
  */
 constraint MissingAssociation
 message "An attribute with a class type must be represented by an association."
@@ -40,6 +42,10 @@ context Class self :
 			exists(Property end in association.memberEnd :
 				isEqual(end.type, self))))
 				
+/*
+ * context Class inv:
+ * self.attribute->forAll(at | at.type.oclIsKindOf(Class) implies Association.allInstances()->exists(association | association.memberEnd.type->includes(at.type) and association.memberEnd.type->includes(self)))
+ */
 // Check with "Association.allInstances()":
 //constraint MissingAssociation
 //message "An attribute with a class type must be represented by an association."
