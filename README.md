@@ -47,6 +47,7 @@ The concept is also described in [History-based Model Repair Recommendations](ht
 The edit rule `ReplaceWithInvertedInheritance` is created manually, which implements the edit step as described in Scenario 2.
 This edit rule is an adaption of the generated edit rule `RelocationInheritance` that moves a generalization between two classes.
 
+A HTML documentation of the generated edit rules can be found in `doc` folder.
 The `Henshin` graph transformation diagrams of the generated edit rules that are relevant to the scenarios can be found in the corresponding scenario folders.
 
 ## Scenario 1: The name of an attribute in a class must be unique.
