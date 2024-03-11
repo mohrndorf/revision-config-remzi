@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>UML 2.5 Edit Rules (Remzi) Patterns</title>
+<style>
+body {
+  font: 300 16px/1.2 'Roboto', Arial, sans-serif; color: #666;
+}
+
+a {
+  color: #1abc9c;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+		
+#searchBox {
+  background-image: url('searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+</style></head>
+<body><input type="text" id="searchBox" onkeyup="search()" placeholder="Search by keys.."><a href="javascript:collapseAll()">collapse all</a> &#124; <a href="javascript:uncollapseAll()">expand all</a><ul id="searchContent">
+<li><a href="#" style="color:#666; text-decoration: none">&lt;&lt;constraint&gt;&gt; CyclicInheritance</a></li>
+<ul>
+<li><a href="inheritance/diagram.html"> Inheritance</a></li>
+<ul>
+<li><a href="rulecreateinheritance/diagram.html">&lt;&lt;rule&gt;&gt; Create: Inheritance</a></li>
+</ul>
+<ul>
+<li><a href="ruledeleteinheritance/diagram.html">&lt;&lt;rule&gt;&gt; Delete: Inheritance</a></li>
+</ul>
+<ul>
+<li><a href="rulerelocationinheritance/diagram.html">&lt;&lt;rule&gt;&gt; Relocation: Inheritance</a></li>
+</ul>
+</ul>
+<li><a href="#" style="color:#666; text-decoration: none">&lt;&lt;constraint&gt;&gt; MissingAssociation</a></li>
+<ul>
+<li><a href="directionalnavigableassociation/diagram.html"> DirectionalNavigableAssociation</a></li><li><a href="navigableassociation/diagram.html"> NavigableAssociation</a></li><li><a href="nonnavigableassociation/diagram.html"> NonNavigableAssociation</a></li>
+<ul>
+<li><a href="rulecreatenonnavigableassociation/diagram.html">&lt;&lt;rule&gt;&gt; Create: NonNavigableAssociation</a></li>
+</ul>
+<ul>
+<li><a href="ruledeletenonnavigableassociation/diagram.html">&lt;&lt;rule&gt;&gt; Delete: NonNavigableAssociation</a></li>
+</ul>
+<ul>
+<li><a href="rulerelocationnonnavigableassociation/diagram.html">&lt;&lt;rule&gt;&gt; Relocation: NonNavigableAssociation</a></li>
+</ul>
+<ul>
+<li><a href="rulecreatedirectionalnavigableassociation/diagram.html">&lt;&lt;rule&gt;&gt; Create: DirectionalNavigableAssociation</a></li>
+</ul>
+<ul>
+<li><a href="ruledeletedirectionalnavigableassociation/diagram.html">&lt;&lt;rule&gt;&gt; Delete: DirectionalNavigableAssociation</a></li>
+</ul>
+<ul>
+<li><a href="ruletransformdirectionalnavigableassociationtonavigableassociation/diagram.html">&lt;&lt;rule&gt;&gt; Transform: DirectionalNavigableAssociation - To - NavigableAssociation</a></li>
+</ul>
+<ul>
+<li><a href="ruletransformdirectionalnavigableassociationtononnavigableassociation/diagram.html">&lt;&lt;rule&gt;&gt; Transform: DirectionalNavigableAssociation - To - NonNavigableAssociation</a></li>
+</ul>
+<ul>
+<li><a href="rulerelocationdirectionalnavigableassociation/diagram.html">&lt;&lt;rule&gt;&gt; Relocation: DirectionalNavigableAssociation</a></li>
+</ul>
+<ul>
+<li><a href="rulecreatenavigableassociation/diagram.html">&lt;&lt;rule&gt;&gt; Create: NavigableAssociation</a></li>
+</ul>
+<ul>
+<li><a href="ruledeletenavigableassociation/diagram.html">&lt;&lt;rule&gt;&gt; Delete: NavigableAssociation</a></li>
+</ul>
+<ul>
+<li><a href="ruletransformnavigableassociationtononnavigableassociation/diagram.html">&lt;&lt;rule&gt;&gt; Transform: NavigableAssociation - To - NonNavigableAssociation</a></li>
+</ul>
+<ul>
+<li><a href="rulerelocationnavigableassociation/diagram.html">&lt;&lt;rule&gt;&gt; Relocation: NavigableAssociation</a></li>
+</ul>
+</ul>
+<li><a href="#" style="color:#666; text-decoration: none">&lt;&lt;constraint&gt;&gt; UniqueAttributeName</a></li>
+<ul>
+<li><a href="datatypeattributeinclass/diagram.html"> DataTypeAttributeInClass</a></li><li><a href="enumerationattributeinclass/diagram.html"> EnumerationAttributeInClass</a></li>
+<ul>
+<li><a href="rulecreatedatatypeattributeinclass/diagram.html">&lt;&lt;rule&gt;&gt; Create: DataTypeAttributeInClass</a></li>
+</ul>
+<ul>
+<li><a href="ruledeletedatatypeattributeinclass/diagram.html">&lt;&lt;rule&gt;&gt; Delete: DataTypeAttributeInClass</a></li>
+</ul>
+<ul>
+<li><a href="ruletransformdatatypeattributeinclasstoenumerationattributeinclass/diagram.html">&lt;&lt;rule&gt;&gt; Transform: DataTypeAttributeInClass - To - EnumerationAttributeInClass</a></li>
+</ul>
+<ul>
+<li><a href="rulecreateenumerationattributeinclass/diagram.html">&lt;&lt;rule&gt;&gt; Create: EnumerationAttributeInClass</a></li>
+</ul>
+<ul>
+<li><a href="ruledeleteenumerationattributeinclass/diagram.html">&lt;&lt;rule&gt;&gt; Delete: EnumerationAttributeInClass</a></li>
+</ul>
+</ul>
+</ul>
+<script>
+function search() {
+  // Declare variables
+  var input, filter, filters, ul, li, a, i, txtValue;
+  input = document.getElementById('searchBox');
+  filter = input.value.toUpperCase();
+  filters = filter.split(' ');
+  ul = document.getElementById('searchContent');
+  li = ul.getElementsByTagName('li');
+
+  if (filter == '') {
+    for (i = 0; i < li.length; i++) {
+      li[i].style.display = "";
+    }
+	return;
+  } else {
+    uncollapseAll();  }
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    txtValue = li[i].innerText;
+    if (containsAll(filters, txtValue)) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+function containsAll(filters, txtValue) {
+  for (i = 0; i < filters.length; i++) {
+    if (txtValue.toUpperCase().indexOf(filters[i]) < 0) {
+	  return false;
+	}
+  }
+  return true;
+}
+
+document.addEventListener('click', function(e) {
+  e = e || window.event;
+  var target = e.target || e.srcElement;
+
+  if (target.tagName == 'A') {
+    if (target.getAttribute('href') !== '#') {      return;    }    target = target.parentNode;
+  }
+
+  if (target.tagName !== 'LI') {
+    return;
+  }
+
+  // set the style of the items:
+  if (target.nextSibling.nextSibling.tagName == 'UL') {
+    var ul = target.nextSibling.nextSibling;
+	
+	if (ul.style.display == 'none') {
+	  ul.style.display = ''
+	} else {
+	  ul.style.display = 'none'
+	}
+  }}, false);
+
+function collapseAll() {
+  ul = document.getElementById('searchContent');
+  uls = ul.getElementsByTagName('ul');
+
+  for (i = 0; i < uls.length; i++) {
+    uls[i].style.display = 'none';
+  }
+}
+function uncollapseAll() {
+  ul = document.getElementById('searchContent');
+  uls = ul.getElementsByTagName('ul');
+
+  for (i = 0; i < uls.length; i++) {
+    uls[i].style.display = '';
+  }
+}</script>
+</body>
+</html>
