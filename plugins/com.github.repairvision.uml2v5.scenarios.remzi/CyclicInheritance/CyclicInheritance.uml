@@ -3,5 +3,7 @@
   <packagedElement xmi:type="uml:Class" xmi:id="_S_Pc4N1xEe6lQ8qhkG68yw" name="A">
     <generalization xmi:type="uml:Generalization" xmi:id="_ViAUkN1xEe6lQ8qhkG68yw" general="_TsdIMN1xEe6lQ8qhkG68yw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_TsdIMN1xEe6lQ8qhkG68yw" name="B"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_TsdIMN1xEe6lQ8qhkG68yw" name="B">
+    <generalization xmi:type="uml:Generalization" xmi:id="_axml8N1xEe6lQ8qhkG68yw" general="_S_Pc4N1xEe6lQ8qhkG68yw"/>
+  </packagedElement>
 </uml:Model>
