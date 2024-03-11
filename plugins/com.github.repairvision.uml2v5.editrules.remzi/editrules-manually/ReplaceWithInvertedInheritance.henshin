@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_vukAsN10Ee6RmLI5YDeY0w" name="Relocation: Inheritance" description="Relocation: Inheritance">
-  <units xsi:type="henshin:SequentialUnit" xmi:id="_vukAsd10Ee6RmLI5YDeY0w" name="Relocation: Inheritance" subUnits="_vukAvN10Ee6RmLI5YDeY0w">
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_vukAsN10Ee6RmLI5YDeY0w" name="Replace With Inverted Inheritance" description="Replace With Inverted Inheritance">
+  <units xsi:type="henshin:SequentialUnit" xmi:id="_vukAsd10Ee6RmLI5YDeY0w" name="Replace With Inverted Inheritance" subUnits="_vukAvN10Ee6RmLI5YDeY0w">
     <parameters xmi:id="_vukAtd10Ee6RmLI5YDeY0w" name="classA" kind="IN"/>
     <parameters xmi:id="_vukAtt10Ee6RmLI5YDeY0w" name="classB" kind="IN"/>
     <parameterMappings xmi:id="_vukAut10Ee6RmLI5YDeY0w" source="_vukAtd10Ee6RmLI5YDeY0w" target="_vukAwN10Ee6RmLI5YDeY0w"/>
     <parameterMappings xmi:id="_vukAu910Ee6RmLI5YDeY0w" source="_vukAtt10Ee6RmLI5YDeY0w" target="_vukAwd10Ee6RmLI5YDeY0w"/>
   </units>
-  <units xsi:type="henshin:Rule" xmi:id="_vukAvN10Ee6RmLI5YDeY0w" name="Relocation: Inheritance">
+  <units xsi:type="henshin:Rule" xmi:id="_vukAvN10Ee6RmLI5YDeY0w" name="Replace With Inverted Inheritance">
     <parameters xmi:id="_vukAwN10Ee6RmLI5YDeY0w" name="classA" kind="IN"/>
     <parameters xmi:id="_vukAwd10Ee6RmLI5YDeY0w" name="classB" kind="IN"/>
     <lhs xmi:id="_vukAwt10Ee6RmLI5YDeY0w" name="Lhs">
